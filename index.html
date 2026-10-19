@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CALIMA | Tablas XXL y Experiencia Gastronómica Moderna</title>
+  <meta name="description" content="Bienvenido a Calima. Especialistas en Tablas XXL para compartir, hamburguesas gourmet y cocina moderna. ¡Llámanos o ven a visitarnos!">
+  <meta name="keywords" content="Calima, Restaurante Calima, Tablas XXL, Hamburguesas Gourmet, Solomillo, Cenar, Reservas">
+  
+  <!-- OpenGraph para compartir en WhatsApp y Redes Sociales -->
+  <meta property="og:title" content="CALIMA | Tablas XXL y Sabor A lo Grande">
+  <meta property="og:description" content="¿Hambre real? Descubre nuestras legendarias Tablas XXL, Hamburguesa La Trufada y Brioche Pulled Pork en Calima.">
+  <meta property="og:image" content="assets/images/tabla-solomillo.jpg">
+  <meta property="og:type" content="restaurant">
+
+  <!-- Estilos CSS -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <!-- Marcado Estructurado Schema.org (JSON-LD) para SEO Local -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Calima",
+    "image": "assets/images/tabla-solomillo.jpg",
+    "@id": "https://calimarestaurante.com/#restaurant",
+    "url": "https://calimarestaurante.com",
+    "telephone": "+34912345678",
+    "priceRange": "€€",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Calle de la Gastronomía, 12",
+      "addressLocality": "Ciudad",
+      "postalCode": "28001",
+      "addressCountry": "ES"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 40.416775,
+      "longitude": -3.703790
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "opens": "13:00",
+        "closes": "16:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "opens": "20:00",
+        "closes": "23:30"
+      }
+    ],
+    "hasMenu": "https://calimarestaurante.com/#carta",
+    "servesCuisine": ["Española", "Parrilla", "Hamburguesas"]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- HEADER FIJO STICKY -->
+  <header class="site-header" id="header">
+    <div class="container header-container">
+      <a href="#" class="brand-logo">
+        <span class="logo-neon">CALIMA</span> <span class="logo-sub">TABLAS XXL</span>
+      </a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#carta" class="nav-link">La Carta</a></li>
+          <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
+          <li><a href="#opiniones" class="nav-link">Opiniones</a></li>
+          <li><a href="#ubicacion" class="nav-link">Ubicación</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <a href="tel:+34912345678" class="btn btn-neon btn-sm">
+          <svg class="icon" viewBox="0 0 24 24"><path fill="currentColor" d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+          Llámanos
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero-section">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <div class="badge-neon">⚡ Gastronomía Moderna & Sabor XXL</div>
+      <h1 class="brand-hero-name">CALIMA</h1>
+      <p class="hero-subtitle">Donde la cocina urbana y las raciones colosales se unen para crear una experiencia inolvidable.</p>
+      <div class="hero-cta-group">
+        <a href="tel:+34912345678" class="btn btn-neon btn-lg">
+          <svg class="icon" viewBox="0 0 24 24"><path fill="currentColor" d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+          Reserva / Llámanos
+        </a>
+        <a href="#ubicacion" class="btn btn-outline btn-lg">
+          <svg class="icon" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          Cómo Llegar
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PLATOS ESTRELLA (HIGHLIGHTS) -->
+  <section class="section section-dark-accent">
+    <div class="container">
+      <div class="section-header text-center">
+        <h2 class="section-title">Especialidades Calima</h2>
+        <p class="section-subtitle">Los platos estrella más aclamados por nuestra gente</p>
+      </div>
+      <div class="highlights-grid">
+        
+        <div class="highlight-card">
+          <div class="card-tag">⭐ Top Estelar</div>
+          <img src="assets/images/tabla-solomillo.jpg" alt="Tabla de Solomillo XXL" class="menu-thumb" loading="lazy">
+          <div class="card-content">
+            <div class="card-header-row">
+              <h3>Tabla de Solomillo XXL</h3>
+              <span class="price">28.90 €</span>
+            </div>
+            <p>Tierno solomillo de ternera trinchado en piedra caliente, servido con escamas de sal marina, patatas rústicas y salsas de la casa.</p>
+          </div>
+        </div>
+
+        <div class="highlight-card">
+          <div class="card-tag">⚡ Recomendado</div>
+          <img src="assets/images/hamburguesa-trufada.jpg" alt="Hamburguesa La Trufada" class="menu-thumb" loading="lazy">
+          <div class="card-content">
+            <div class="card-header-row">
+              <h3>Hamburguesa La Trufada</h3>
+              <span class="price">14.50 €</span>
+            </div>
+            <p>200g de carne madurada de vacuno, queso gouda ahumado, cebolla caramelizada al Pedro Ximénez y mayonesa pura de trufa negra en pan brioche.</p>
+          </div>
+        </div>
+
+        <div class="highlight-card">
+          <div class="card-tag">👑 Favorito</div>
+          <img src="assets/images/brioche-pulled-pork.jpg" alt="Brioche Pulled Pork" class="menu-thumb" loading="lazy">
+          <div class="card-content">
+            <div class="card-header-row">
+              <h3>Brioche Pulled Pork</h3>
+              <span class="price">12.90 €</span>
+            </div>
+            <p>Cerdo deshilachado cocinado 12 horas a baja temperatura, bañado en salsa BBQ estilo Calima y ensaladilla coleslaw en pan brioche.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CARTA INTERACTIVA -->
+  <section class="section" id="carta">
+    <div class="container">
+      <div class="section-header text-center">
+        <h2 class="section-title">Carta Interactiva</h2>
+        <p class="section-subtitle">Selecciona tus favoritos y prepárate para disfrutar</p>
+      </div>
+
+      <!-- Filtros por categoría -->
+      <div class="menu-filters-wrapper">
+        <div class="menu-filters" id="menu-filters">
+          <button class="filter-btn active" data-category="tablas">Tablas XXL</button>
+          <button class="filter-btn" data-category="hamburguesas">Hamburguesas</button>
+          <button class="filter-btn" data-category="entrantes">Raciones & Entrantes</button>
+          <button class="filter-btn" data-category="postres">Postres Caseros</button>
+        </div>
+      </div>
+
+      <!-- Cuadrícula de Platos -->
+      <div class="menu-grid" id="menu-grid">
+        <!-- Los platos se renderizan dinámicamente con JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN NOSOTROS -->
+  <section class="section section-dark-accent" id="nosotros">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image">
+          <img src="assets/images/sobre-nosotros.jpg" alt="Ambiente de Calima" loading="lazy">
+        </div>
+        <div class="about-content">
+          <span class="badge-neon">El Concepto Calima</span>
+          <h2>Innovación Gastronómica. Pasión por Compartir.</h2>
+          <p>En <strong>Calima</strong> combinamos una estética moderna y vibrante con una cocina que rinde culto a las porciones generosas y de calidad. Nacimos con la idea de transformar el concepto de salir a cenar en una auténtica experiencia social.</p>
+          <p>Nuestras Tablas XXL son el centro de la mesa, diseñadas para romper la rutina y disfrutar entre amigos o en familia. Fuego, calidad e ingredientes seleccionados a diario son nuestro sello personal.</p>
+          
+          <!-- Métricas e Impacto Local -->
+          <div class="stats-grid">
+            <div class="stat-card">
+              <span class="stat-number">4.9 ★</span>
+              <span class="stat-label">Valoración Google</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">+18K</span>
+              <span class="stat-label">Clientes Satisfechos</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">100%</span>
+              <span class="stat-label">Espíritu Moderno</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRUEBA SOCIAL / RESEÑAS -->
+  <section class="section" id="opiniones">
+    <div class="container">
+      <div class="section-header text-center">
+        <h2 class="section-title">Experiencias Reales</h2>
+        <p class="section-subtitle">Lo que opinan quienes ya han vivido el concepto Calima</p>
+      </div>
+
+      <div class="testimonial-slider-container">
+        <button class="slider-btn prev-btn" id="prevReview" aria-label="Anterior reseña">❮</button>
+        <div class="testimonial-slider" id="testimonialSlider">
+          
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p class="review-text">"Calima superó todas nuestras expectativas. La Tabla de Solomillo XXL estaba en su punto perfecto y la ambientación del local es sencillamente genial."</p>
+            <div class="reviewer-info">
+              <span class="reviewer-name">Carlos Mendoza</span>
+              <span class="reviewer-type">Local Guide • Google Maps</span>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p class="review-text">"La Hamburguesa La Trufada es espectacular. Un ambiente muy moderno, trato excelente y comida de 10. ¡Repetiremos seguro!"</p>
+            <div class="reviewer-info">
+              <span class="reviewer-name">Elena Gómez</span>
+              <span class="reviewer-type">Cliente Frecuente</span>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p class="review-text">"Perfecto para ir con amigos. El Brioche Pulled Pork y las tablas para compartir son abundantes y deliciosas."</p>
+            <div class="reviewer-info">
+              <span class="reviewer-name">Marcos Rivas</span>
+              <span class="reviewer-type">Local Guide • Google Maps</span>
+            </div>
+          </div>
+
+        </div>
+        <button class="slider-btn next-btn" id="nextReview" aria-label="Siguiente reseña">❯</button>
+      </div>
+      <div class="slider-dots" id="sliderDots"></div>
+    </div>
+  </section>
+
+  <!-- RESTAURANTE Y UBICACIÓN -->
+  <section class="section section-dark-accent" id="ubicacion">
+    <div class="container">
+      <div class="section-header text-center">
+        <h2 class="section-title">Encuéntranos</h2>
+        <p class="section-subtitle">Ven a conocer nuestro espacio y disfrutar de la experiencia Calima</p>
+      </div>
+
+      <div class="location-grid">
+        <div class="location-info">
+          <div class="info-block">
+            <h3>📍 Dirección</h3>
+            <p>Calle de la Gastronomía, 12<br>28001 Madrid, España</p>
+            <a href="https://maps.google.com" target="_blank" rel="noopener" class="btn btn-neon btn-sm mt-10">Abrir en Google Maps</a>
+          </div>
+
+          <div class="info-block">
+            <h3>🕒 Horarios</h3>
+            <ul class="hours-list">
+              <li><span>Lunes:</span> <span>Cerrado por descanso</span></li>
+              <li><span>Martes - Jueves:</span> <span>13:00 - 16:00 | 20:00 - 23:30</span></li>
+              <li><span>Viernes - Sábado:</span> <span>13:00 - 16:30 | 20:00 - 00:00</span></li>
+              <li><span>Domingo:</span> <span>13:00 - 16:30 | 20:00 - 23:30</span></li>
+            </ul>
+          </div>
+
+          <div class="info-block">
+            <h3>📞 Reservas Telefónicas</h3>
+            <p>Llámanos para reservar tu mesa al instante:</p>
+            <a href="tel:+34912345678" class="phone-link">+34 912 34 56 78</a>
+          </div>
+        </div>
+
+        <div class="location-map">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.38712345678!2d-3.703790!3d40.416775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDI1JzAwLjQiTiAzwrA0Mic00C4yIlc!5e0!3m2!1ses!2ses!4v1600000000000!5m2!1ses!2ses" 
+            width="100%" 
+            height="100%" 
+            style="border:0; min-height:350px; border-radius:12px;" 
+            allowfullscreen="" 
+            loading="lazy"
+            title="Ubicación de Calima en Google Maps">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER Y NAP SEO LOCAL -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <a href="#" class="brand-logo">
+          <span class="logo-neon">CALIMA</span> <span class="logo-sub">TABLAS XXL</span>
+        </a>
+        <p>Restaurante moderno especializado en Tablas XXL y gastronomía de vanguardia para compartir.</p>
+      </div>
+      
+      <div class="footer-contact">
+        <h4>CALIMA RESTAURANTE</h4>
+        <p>Calle de la Gastronomía, 12, 28001 Madrid</p>
+        <p>Teléfono: +34 912 34 56 78</p>
+        <p>Email: contacto@calimarestaurante.com</p>
+      </div>
+
+      <div class="footer-social">
+        <h4>Síguenos</h4>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram">Instagram</a>
+          <a href="#" aria-label="Facebook">Facebook</a>
+          <a href="#" aria-label="TripAdvisor">TripAdvisor</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom text-center">
+      <p>&copy; 2026 CALIMA. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- MOBILE STICKY BOTTOM BAR -->
+  <div class="mobile-sticky-bar">
+    <a href="tel:+34912345678" class="btn btn-neon btn-full">
+      <svg class="icon" viewBox="0 0 24 24"><path fill="currentColor" d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+      Llámanos Ahora
+    </a>
+    <a href="#ubicacion" class="btn btn-outline btn-full">
+      <svg class="icon" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+      Cómo Llegar
+    </a>
+  </div>
+
+  <!-- JavaScript Principal -->
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
