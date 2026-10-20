@@ -1,301 +1,336 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CALIMA | Tablas XXL, Carta & Ambiente Moderno en Alcorcón</title>
-  <meta name="description" content="Bienvenido a Calima en Alcorcón. Disfruta de nuestras famosas Tablas XXL, hamburguesas gourmet, picoteo y ambiente único con shishas y copas.">
-  <meta name="keywords" content="Calima Alcorcón, Tablas XXL Alcorcón, Hamburguesas Alcorcón, Shishas Alcorcón, Restaurante Calima">
-  
-  <meta property="og:title" content="CALIMA | Tablas XXL y Gastronomía Moderna">
-  <meta property="og:description" content="Especialistas en Tablas XXL, hamburguesas, raciones para compartir y shishas en Alcorcón.">
-  <meta property="og:image" content="assets/images/hero-bg.jpg">
-  <meta property="og:type" content="restaurant">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabor & Tradición - Restaurante Gastronómico en Madrid</title>
+    <meta name="description" content="Disfruta de la mejor cocina de autor y gastronomía mediterránea en el corazón de Madrid. Reserva tu mesa online o pide a domicilio.">
+    
+    <!-- Open Graph / Redes Sociales -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Sabor & Tradición - Restaurante Gastronómico">
+    <meta property="og:description" content="Experiencia culinaria única. Cocina de autor, producto local y ambiente exclusivo.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80">
+    <meta property="og:url" content="https://tu-usuario.github.io/restaurante-website/">
 
-  <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
 
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Restaurant",
-    "name": "Calima",
-    "image": "assets/images/hero-bg.jpg",
-    "@id": "https://calimaalcorcon.com/#restaurant",
-    "url": "https://calimaalcorcon.com",
-    "telephone": "+34912345678",
-    "priceRange": "€€",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Calle Porto Cristo, 3",
-      "addressLocality": "Alcorcón",
-      "postalCode": "28924",
-      "addressCountry": "ES"
-    },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.2",
-      "reviewCount": "180"
-    },
-    "hasMenu": "https://calimaalcorcon.com/#carta",
-    "servesCuisine": ["Española", "Parrilla", "Hamburguesas"]
-  }
-  </script>
+    <!-- Schema Markup JSON-LD (SEO Local & Google Maps) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "@id": "https://tu-usuario.github.io/restaurante-website/#restaurant",
+      "name": "Sabor & Tradición",
+      "image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80",
+      "url": "https://tu-usuario.github.io/restaurante-website/",
+      "telephone": "+34912345678",
+      "priceRange": "€€-€€€",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Calle Gran Vía, 28",
+        "addressLocality": "Madrid",
+        "postalCode": "28013",
+        "addressCountry": "ES"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 40.419992,
+        "longitude": -3.702561
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "opens": "13:00",
+          "closes": "16:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "opens": "20:00",
+          "closes": "23:30"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Sunday",
+          "opens": "13:00",
+          "closes": "16:30"
+        }
+      ],
+      "hasMenu": "https://tu-usuario.github.io/restaurante-website/#menu"
+    }
+    </script>
 </head>
 <body>
 
-  <!-- HEADER -->
-  <header class="site-header" id="header">
-    <div class="container header-container">
-      <a href="#" class="brand-logo">
-        <span class="logo-neon">CALIMA</span> <span class="logo-sub">ALCORCÓN</span>
-      </a>
-      <nav class="main-nav">
-        <ul>
-          <li><a href="#carta" class="nav-link">La Carta</a></li>
-          <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
-          <li><a href="#opiniones" class="nav-link">Opiniones</a></li>
-          <li><a href="#ubicacion" class="nav-link">Ubicación</a></li>
-        </ul>
-      </nav>
-      <div class="header-actions">
-        <a href="tel:+34912345678" class="btn btn-neon btn-sm">
-          <svg class="icon" viewBox="0 0 24 24"><path fill="currentColor" d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
-          Llámanos
-        </a>
-      </div>
-    </div>
-  </header>
-
-  <!-- HERO SECTION -->
-  <section class="hero-section">
-    <div class="hero-overlay"></div>
-    <div class="container hero-content">
-      <div class="badge-neon">⚡ Tablas XXL • Hamburguesas • Shishas • Copas</div>
-      <h1 class="brand-hero-name">CALIMA</h1>
-      <p class="hero-subtitle">La perfecta fusión entre comida potente para compartir, ambiente moderno y el mejor espacio para tomar algo en Alcorcón.</p>
-      <div class="hero-cta-group">
-        <a href="tel:+34912345678" class="btn btn-neon btn-lg">
-          <svg class="icon" viewBox="0 0 24 24"><path fill="currentColor" d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
-          Llámanos / Reservas
-        </a>
-        <a href="#ubicacion" class="btn btn-outline btn-lg">
-          <svg class="icon" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5-2.5z"/></svg>
-          Cómo Llegar
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- CARTA INTERACTIVA COMPLETA DE COMIDAS -->
-  <section class="section" id="carta">
-    <div class="container">
-      <div class="section-header text-center">
-        <h2 class="section-title">Nuestra Carta de Comidas</h2>
-        <p class="section-subtitle">Elige tu categoría favorita y descubre nuestra propuesta gastronómica real</p>
-      </div>
-
-      <div class="menu-filters-wrapper">
-        <div class="menu-filters" id="menu-filters">
-          <button class="filter-btn active" data-category="tablas">Tablas XXL</button>
-          <button class="filter-btn" data-category="hamburguesas">Hamburguesas</button>
-          <button class="filter-btn" data-category="compartir">Para Compartir</button>
-          <button class="filter-btn" data-category="brioches">Brioches</button>
-          <button class="filter-btn" data-category="fit">Opción Fit</button>
-          <button class="filter-btn" data-category="postres">Postres</button>
+    <!-- Header & Navegación -->
+    <header class="header" id="header">
+        <div class="container nav-container">
+            <a href="#" class="logo">Sabor <span>&</span> Tradición</a>
+            <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="#hero" class="nav-link">Inicio</a></li>
+                    <li><a href="#nosotros" class="nav-link">Experiencia</a></li>
+                    <li><a href="#menu" class="nav-link">Menú</a></li>
+                    <li><a href="#resenas" class="nav-link">Opiniones</a></li>
+                    <li><a href="#contacto" class="nav-link">Ubicación</a></li>
+                </ul>
+            </nav>
+            <a href="tel:+34912345678" class="btn btn-secondary header-btn">Reservar Mesa</a>
         </div>
-      </div>
+    </header>
 
-      <div class="menu-grid" id="menu-grid">
-        <!-- Renderizado vía JavaScript -->
-      </div>
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
+                <span class="badge-tag">Alta Gastronomía Mediterránea</span>
+                <h1>Una experiencia culinaria inolvidable en el corazón de la ciudad</h1>
+                <p>Ingredientes locales, técnicas vanguardistas y pasión por el detalle en cada plato.</p>
+                <div class="hero-buttons">
+                    <a href="#menu" class="btn btn-primary">Ver Menú Interactivo</a>
+                    <a href="https://maps.app.goo.gl/r34zBebKVd5bBvU66" target="_blank" rel="noopener" class="btn btn-outline">Reservar Online</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experiencia / Sobre Nosotros -->
+        <section class="about section" id="nosotros">
+            <div class="container grid grid-2">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80" alt="Chef preparando plato estrella" loading="lazy">
+                </div>
+                <div class="about-text">
+                    <h2 class="section-title">Nuestra Historia & Pasión</h2>
+                    <p class="section-lead">Fusionamos recetas tradicionales con el toque contemporáneo que busca el comensal moderno.</p>
+                    <p>En <strong>Sabor & Tradición</strong> cada ingrediente cuenta una historia. Trabajamos de la mano de agricultores y pescadores locales para garantizar que únicamente lo más fresco llegue a tu mesa.</p>
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <h3>Producto de Cercanía</h3>
+                            <p>100% ingredientes orgánicos y de temporada.</p>
+                        </div>
+                        <div class="feature-item">
+                            <h3>Bodega Selección</h3>
+                            <p>Más de 80 referencias de vinos con D.O.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Menú Interactivo -->
+        <section class="menu section bg-light" id="menu">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">Nuestra Carta</h2>
+                    <p>Explora nuestras especialidades elaboradas al momento</p>
+                </div>
+
+                <!-- Filtros Categorías -->
+                <div class="menu-tabs">
+                    <button class="menu-tab active" data-category="entrantes">Entrantes</button>
+                    <button class="menu-tab" data-category="principales">Principales</button>
+                    <button class="menu-tab" data-category="postres">Postres</button>
+                    <button class="menu-tab" data-category="bebidas">Bebidas</button>
+                </div>
+
+                <!-- Grid de Platos -->
+                <div class="menu-grid">
+                    <!-- Entrantes -->
+                    <article class="menu-item" data-category="entrantes">
+                        <div class="menu-item-header">
+                            <h3>Jamón Ibérico de Bellota (100g)</h3>
+                            <span class="price">24.00 €</span>
+                        </div>
+                        <p class="description">Acompañado de cristal de pan con tomate confitado y aceite de oliva virgen extra.</p>
+                    </article>
+
+                    <article class="menu-item" data-category="entrantes">
+                        <div class="menu-item-header">
+                            <h3>Croquetas Artesanas de Trufa y Setas</h3>
+                            <span class="price">14.50 €</span>
+                        </div>
+                        <p class="description">Bechamel cremosa con trufa negra silvestre (6 unidades).</p>
+                    </article>
+
+                    <!-- Principales -->
+                    <article class="menu-item hidden" data-category="principales">
+                        <div class="menu-item-header">
+                            <h3>Solomillo de Vaca Vieja a la Brasa</h3>
+                            <span class="price">28.00 €</span>
+                        </div>
+                        <p class="description">Con parmentier de patata ahumada y reducción de vino de Jerez.</p>
+                    </article>
+
+                    <article class="menu-item hidden" data-category="principales">
+                        <div class="menu-item-header">
+                            <h3>Arroz Meloso de Bogavante</h3>
+                            <span class="price">26.50 €</span>
+                        </div>
+                        <p class="description">Preparado con caldo concentrado de marisco del Cantábrico (Mínimo 2 personas, precio p.p.).</p>
+                    </article>
+
+                    <!-- Postres -->
+                    <article class="menu-item hidden" data-category="postres">
+                        <div class="menu-item-header">
+                            <h3>Tarta de Queso Fluida</h3>
+                            <span class="price">7.50 €</span>
+                        </div>
+                        <p class="description">Receta tradicional elaborada con mezcla de quesos de oveja y galleta artesana.</p>
+                    </article>
+
+                    <article class="menu-item hidden" data-category="postres">
+                        <div class="menu-item-header">
+                            <h3>Coulant de Chocolate 70% con Helado</h3>
+                            <span class="price">8.00 €</span>
+                        </div>
+                        <p class="description">Corazón caliente de chocolate con helado de vainilla de Madagascar.</p>
+                    </article>
+
+                    <!-- Bebidas -->
+                    <article class="menu-item hidden" data-category="bebidas">
+                        <div class="menu-item-header">
+                            <h3>Vino Tinto D.O. Ribera del Duero (Copa)</h3>
+                            <span class="price">4.50 €</span>
+                        </div>
+                        <p class="description">Crianza de autor con notas de frutos rojos y madera roble.</p>
+                    </article>
+
+                    <article class="menu-item hidden" data-category="bebidas">
+                        <div class="menu-item-header">
+                            <h3>Limonada Artesanal con Menta y Jengibre</h3>
+                            <span class="price">4.00 €</span>
+                        </div>
+                        <p class="description">Refrescante, recién exprimida con azúcar de caña orgánico.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Prueba Social / Reseñas Google Maps -->
+        <section class="reviews section" id="resenas">
+            <div class="container">
+                <div class="google-badge-card">
+                    <div class="google-logo">
+                        <svg width="24" height="24" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/></svg>
+                        <span>Google Reviews</span>
+                    </div>
+                    <div class="rating-score">
+                        <span class="score-number">4.8</span>
+                        <div class="stars">★★★★★</div>
+                        <span class="total-reviews">(+450 opiniones)</span>
+                    </div>
+                </div>
+
+                <div class="reviews-grid">
+                    <div class="review-card">
+                        <div class="review-stars">★★★★★</div>
+                        <p>"El solomillo estuvo sensacional y la atención del personal impecable. Sin duda se ha convertido en nuestro restaurante favorito del centro."</p>
+                        <div class="reviewer-name">- Carlos Mendoza</div>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-stars">★★★★★</div>
+                        <p>"Servicio de 10 y la tarta de queso es de otro planeta. Es fundamental reservar con antelación porque siempre está lleno."</p>
+                        <div class="reviewer-name">- Laura G.</div>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-stars">★★★★★</div>
+                        <p>"Ambiente muy acogedor, excelente relación calidad-precio. Ideal para cenas en pareja o celebraciones especiales."</p>
+                        <div class="reviewer-name">- Javier R.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ubicación y Contacto -->
+        <section class="contact section bg-light" id="contacto">
+            <div class="container grid grid-2">
+                <div class="contact-info">
+                    <h2 class="section-title">Dónde Encontrarnos</h2>
+                    <p class="section-lead">Estamos ubicados en una zona privilegiada con fácil acceso.</p>
+                    
+                    <div class="info-block">
+                        <h3>Dirección</h3>
+                        <p>Calle Gran Vía, 28, 28013 Madrid, España</p>
+                        <a href="https://maps.app.goo.gl/r34zBebKVd5bBvU66" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">Cómo llegar (Google Maps)</a>
+                    </div>
+
+                    <div class="info-block">
+                        <h3>Horario de Apertura</h3>
+                        <p><strong>Martes a Sábado:</strong> 13:00 - 16:00 | 20:00 - 23:30</p>
+                        <p><strong>Domingos:</strong> 13:00 - 16:30</p>
+                        <p><strong>Lunes:</strong> Cerrado por descanso</p>
+                    </div>
+
+                    <div class="info-block">
+                        <h3>Contacto Directo</h3>
+                        <p>Teléfono: <a href="tel:+34912345678" class="link-highlight">+34 912 345 678</a></p>
+                        <p>Email: reservaciones@saborytradicion.com</p>
+                    </div>
+                </div>
+
+                <!-- Mapa Embebido Responsivo -->
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.6391480080643!2d-3.704749823438258!3d40.41999205562723!2m3!1f0!2f0!3f0!2m3!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42287d210f7d0b%3A0x10313c0b02f8bf2e!2sGran%20V%C3%ADa%2C%2028%2C%20Centro%2C%2028013%20Madrid!5e0!3m2!1ses!2ses!4v1700000000000!5m2!1ses!2ses" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Sticky Bar para Dispositivos Móviles (Conversión Alta) -->
+    <div class="mobile-sticky-cta">
+        <a href="tel:+34912345678" class="btn btn-phone">📞 Llamar</a>
+        <a href="https://maps.app.goo.gl/r34zBebKVd5bBvU66" target="_blank" rel="noopener" class="btn btn-primary">Mesa / Pedir</a>
     </div>
-  </section>
 
-  <!-- SECCIÓN NOSOTROS -->
-  <section class="section section-dark-accent" id="nosotros">
-    <div class="container">
-      <div class="about-grid">
-        <div class="about-image">
-          <img src="assets/images/ambiente-cachimba.jpg" alt="Mesas en Calima estilo oscuro con hamburguesas y cachimba" loading="lazy">
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-col">
+                <span class="logo">Sabor <span>&</span> Tradición</span>
+                <p>Gastronomía de calidad y servicio excepcional en cada visita.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Enlaces Rápidos</h4>
+                <ul>
+                    <li><a href="#menu">Menú</a></li>
+                    <li><a href="#nosotros">Sobre Nosotros</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Síguenos</h4>
+                <div class="social-links">
+                    <a href="#" aria-label="Instagram">Instagram</a>
+                    <a href="#" aria-label="Facebook">Facebook</a>
+                    <a href="#" aria-label="TripAdvisor">TripAdvisor</a>
+                </div>
+            </div>
         </div>
-        <div class="about-content">
-          <span class="badge-neon">El Ambiente Calima</span>
-          <h2>Mucho Más Que Comer: Gastronomía, Shishas & Tardeo</h2>
-          <p>En <strong>Calima Alcorcón</strong> no solo vienes a disfrutar de unas raciones brutales o unas buenas hamburguesas artesanas; hemos creado un punto de encuentro con estilo moderno, iluminación envolvente y un ambiente idóneo para tomar algo con amigos.</p>
-          <p>Alarga la sobremesa o empieza la noche probando nuestras shishas de sabores premium, acompañadas de la mejor selección de cervezas frías, cócteles y copas en un espacio vanguardista.</p>
-          
-          <div class="stats-grid">
-            <div class="stat-card">
-              <span class="stat-number">4.2 ★</span>
-              <span class="stat-label">Valoración Real en Google Maps</span>
-            </div>
-            <div class="stat-card">
-              <span class="stat-number">100%</span>
-              <span class="stat-label">Ambiente Moderno & Shishas</span>
-            </div>
-          </div>
-
+        <div class="footer-bottom text-center">
+            <p>&copy; 2026 Sabor & Tradición. Todos los derechos reservados. | <a href="#">Aviso Legal</a> | <a href="#">Política de Privacidad</a></p>
         </div>
-      </div>
-    </div>
-  </section>
+    </footer>
 
-  <!-- PRUEBA SOCIAL / RESEÑAS REALES -->
-  <section class="section" id="opiniones">
-    <div class="container">
-      <div class="section-header text-center">
-        <h2 class="section-title">Reseñas Reales de Google Maps</h2>
-        <p class="section-subtitle">Lo que dicen nuestros clientes tras visitarnos en Alcorcón</p>
-      </div>
-
-      <div class="testimonial-slider-container">
-        <button class="slider-btn prev-btn" id="prevReview" aria-label="Anterior reseña">❮</button>
-        <div class="testimonial-slider" id="testimonialSlider">
-          
-          <div class="testimonial-card">
-            <div class="stars">★★★★★</div>
-            <p class="review-text">"Sitio muy top en Alcorcón. Las tablas XXL son gigantescas y perfectas para ir en grupo. Luego nos quedamos tomando unas copas y shisha, la atención de los camareros de 10."</p>
-            <div class="reviewer-info">
-              <span class="reviewer-name">David G.</span>
-              <span class="reviewer-type">Local Guide • Google Maps</span>
-            </div>
-          </div>
-
-          <div class="testimonial-card">
-            <div class="stars">★★★★★</div>
-            <p class="review-text">"Increíble la hamburguesa La Trufada y los tequeños. El ambiente con luces y la música suave te invita a quedarte charlando tranquilamente."</p>
-            <div class="reviewer-info">
-              <span class="reviewer-name">Laura M.</span>
-              <span class="reviewer-type">Reseña Verificada • Google Maps</span>
-            </div>
-          </div>
-
-          <div class="testimonial-card">
-            <div class="stars">★★★★☆</div>
-            <p class="review-text">"Las patatas búfalo y la tabla de entraña riquísimas. Un local moderno, genial para cenar bien de precio y luego pedirte una cachimba entre amigos."</p>
-            <div class="reviewer-info">
-              <span class="reviewer-name">Adrian R.</span>
-              <span class="reviewer-type">Local Guide • Google Maps</span>
-            </div>
-          </div>
-
-          <div class="testimonial-card">
-            <div class="stars">★★★★★</div>
-            <p class="review-text">"Servicio atento y rápido. Recomendados totalmente los brioches y los nachos texanos. El ambiente nocturno para tomar algo es un acierto total."</p>
-            <div class="reviewer-info">
-              <span class="reviewer-name">Carmen P.</span>
-              <span class="reviewer-type">Reseña Verificada • Google Maps</span>
-            </div>
-          </div>
-
-          <div class="testimonial-card">
-            <div class="stars">★★★★★</div>
-            <p class="review-text">"Buenas raciones, lugar moderno y agradable. Las cachimbas tiran genial y las cervezas las sirven bien frías. Muy recomendable en la zona."</p>
-            <div class="reviewer-info">
-              <span class="reviewer-name">Sergio B.</span>
-              <span class="reviewer-type">Local Guide • Google Maps</span>
-            </div>
-          </div>
-
-        </div>
-        <button class="slider-btn next-btn" id="nextReview" aria-label="Siguiente reseña">❯</button>
-      </div>
-
-      <div class="progress-bar-container">
-        <div class="progress-bar-fill" id="progressBarFill"></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- UBICACIÓN Y CONTACTO -->
-  <section class="section section-dark-accent" id="ubicacion">
-    <div class="container">
-      <div class="section-header text-center">
-        <h2 class="section-title">¿Dónde Estamos?</h2>
-        <p class="section-subtitle">Te esperamos en Calima Alcorcón</p>
-      </div>
-
-      <div class="location-grid">
-        <div class="location-info">
-          <div class="info-block">
-            <h3>📍 Dirección</h3>
-            <p>Calle Porto Cristo, 3<br>28924 Alcorcón, Madrid</p>
-            <a href="https://maps.google.com" target="_blank" rel="noopener" class="btn btn-neon btn-sm mt-10">Abrir en Google Maps</a>
-          </div>
-
-          <div class="info-block">
-            <h3>🕒 Horario habitual</h3>
-            <ul class="hours-list">
-              <li><span>Martes - Jueves:</span> <span>13:00 - 00:00</span></li>
-              <li><span>Viernes - Sábado:</span> <span>13:00 - 02:00</span></li>
-              <li><span>Domingo:</span> <span>13:00 - 00:00</span></li>
-            </ul>
-          </div>
-
-          <div class="info-block">
-            <h3>📞 Contacto y Reservas</h3>
-            <p>Haz tu reserva de mesa o infórmate al instante:</p>
-            <a href="tel:+34912345678" class="phone-link">+34 912 34 56 78</a>
-          </div>
-        </div>
-
-        <div class="location-map">
-          <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3040.5!2d-3.8120!3d40.3445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDIwJzQwLjIiTiAzwrA0OCc0My4yIlc!5e0!3m2!1ses!2ses!4v1600000000000!5m2!1ses!2ses" 
-            width="100%" 
-            height="100%" 
-            style="border:0; min-height:350px; border-radius:12px;" 
-            allowfullscreen="" 
-            loading="lazy"
-            title="Ubicación de Calima Alcorcón en Google Maps">
-          </iframe>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="site-footer">
-    <div class="container footer-container">
-      <div class="footer-brand">
-        <a href="#" class="brand-logo">
-          <span class="logo-neon">CALIMA</span> <span class="logo-sub">ALCORCÓN</span>
-        </a>
-        <p>Tu sitio de confianza para comer a lo grande, disfrutar de buen ambiente moderno y tomar algo con shishas en Alcorcón.</p>
-      </div>
-      
-      <div class="footer-contact">
-        <h4>CALIMA ALCORCÓN</h4>
-        <p>Calle Porto Cristo, 3, 28924 Alcorcón, Madrid</p>
-        <p>Teléfono: +34 912 34 56 78</p>
-      </div>
-
-      <div class="footer-social">
-        <h4>Síguenos</h4>
-        <div class="social-links">
-          <a href="#" aria-label="Instagram">Instagram</a>
-          <a href="#" aria-label="Facebook">Facebook</a>
-          <a href="#" aria-label="Google Maps">Google Maps</a>
-        </div>
-      </div>
-    </div>
-    <div class="footer-bottom text-center">
-      <p>&copy; 2026 CALIMA ALCORCÓN. Todos los derechos reservados.</p>
-    </div>
-  </footer>
-
-  <!-- BARRA FIJA MÓVIL -->
-  <div class="mobile-sticky-bar">
-    <a href="tel:+34912345678" class="btn btn-neon btn-full">
-      <svg class="icon" viewBox="0 0 24 24"><path fill="currentColor" d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
-      Llámanos
-    </a>
-    <a href="#ubicacion" class="btn btn-outline btn-full">
-      <svg class="icon" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-      Cómo Llegar
-    </a>
-  </div>
-
-  <script src="assets/js/app.js"></script>
+    <script src="assets/js/app.js"></script>
 </body>
 </html>
