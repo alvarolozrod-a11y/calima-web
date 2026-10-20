@@ -1,26 +1,24 @@
 /* ==========================================================================
-   VARIABLES Y CONFIGURACIÓN DARK THEME NEÓN AZUL (CALIMA)
+   VARIABLES Y CONFIGURACIÓN DARK THEME NEÓN AZUL OSCURO (CALIMA)
    ========================================================================== */
 :root {
-  --bg-main: #0a0c10;
-  --bg-card: #121620;
-  --bg-accent: #181d2a;
+  --bg-main: #07090e;
+  --bg-card: #0f131d;
+  --bg-accent: #141926;
   --text-main: #f1f5f9;
   --text-muted: #94a3b8;
   
-  /* Neón Azul Eléctrico y Cían */
-  --neon-blue: #00e5ff;
-  --neon-blue-glow: rgba(0, 229, 255, 0.45);
-  --neon-cyan: #0088ff;
-  --neon-accent: #00f0ff;
+  /* Neón Azul Marino / Cobalto Oscuro */
+  --neon-blue: #0066ff;
+  --neon-blue-glow: rgba(0, 102, 255, 0.5);
+  --neon-blue-dark: #0044cc;
   
-  --border-color: #222b3d;
+  --border-color: #1e2638;
   --font-family: Arial, Helvetica, sans-serif;
   --transition: all 0.3s ease;
   --container-width: 1200px;
 }
 
-/* RESET GENERAL */
 * {
   margin: 0;
   padding: 0;
@@ -51,7 +49,6 @@ body {
   margin: 0 auto;
 }
 
-/* TIPOGRAFÍA Y BOTONES */
 h1, h2, h3, h4 {
   color: #ffffff;
   font-weight: 700;
@@ -87,24 +84,24 @@ h1, h2, h3, h4 {
 
 .btn-neon {
   background-color: var(--neon-blue);
-  color: #050b14;
+  color: #ffffff;
   box-shadow: 0 0 15px var(--neon-blue-glow);
 }
 
 .btn-neon:hover {
-  background-color: #33ebff;
-  box-shadow: 0 0 25px rgba(0, 229, 255, 0.75);
+  background-color: #1a75ff;
+  box-shadow: 0 0 25px rgba(0, 102, 255, 0.8);
   transform: translateY(-2px);
 }
 
 .btn-outline {
   background: transparent;
   border-color: var(--neon-blue);
-  color: var(--neon-blue);
+  color: #ffffff;
 }
 
 .btn-outline:hover {
-  background-color: rgba(0, 229, 255, 0.1);
+  background-color: rgba(0, 102, 255, 0.15);
   box-shadow: 0 0 15px var(--neon-blue-glow);
   transform: translateY(-2px);
 }
@@ -114,20 +111,16 @@ h1, h2, h3, h4 {
   height: 20px;
 }
 
-/* ==========================================================================
-   HEADER FIJO STICKY
-   ========================================================================== */
 .site-header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: rgba(10, 12, 16, 0.95);
+  background-color: rgba(7, 9, 14, 0.95);
   backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--border-color);
   z-index: 1000;
   padding: 15px 0;
-  transition: var(--transition);
 }
 
 .header-container {
@@ -174,21 +167,18 @@ h1, h2, h3, h4 {
 }
 
 @media (max-width: 768px) {
-  .main-nav {
-    display: none;
-  }
+  .main-nav { display: none; }
 }
 
-/* ==========================================================================
-   HERO SECTION
-   ========================================================================== */
 .hero-section {
   position: relative;
   min-height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url('../images/hero-bg.jpg') center/cover no-repeat;
+  background: linear-gradient(180deg, rgba(7, 9, 14, 0.70) 0%, rgba(7, 9, 14, 0.95) 100%), 
+              url('https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=1920&auto=format&fit=crop') center/cover no-repeat,
+              url('../images/hero-bg.jpg') center/cover no-repeat;
   padding-top: 80px;
 }
 
@@ -198,7 +188,7 @@ h1, h2, h3, h4 {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(180deg, rgba(10,12,16,0.7) 0%, rgba(10,12,16,0.95) 100%);
+  background: linear-gradient(180deg, rgba(7,9,14,0.6) 0%, rgba(7,9,14,0.95) 100%);
 }
 
 .hero-content {
@@ -211,14 +201,14 @@ h1, h2, h3, h4 {
 .badge-neon {
   display: inline-block;
   padding: 6px 16px;
-  background-color: rgba(0, 229, 255, 0.12);
+  background-color: rgba(0, 102, 255, 0.15);
   border: 1px solid var(--neon-blue);
-  color: var(--neon-blue);
+  color: #3385ff;
   border-radius: 50px;
   font-size: 0.9rem;
   font-weight: bold;
   margin-bottom: 20px;
-  text-shadow: 0 0 10px var(--neon-blue-glow);
+  box-shadow: 0 0 10px var(--neon-blue-glow);
 }
 
 .brand-hero-name {
@@ -226,7 +216,7 @@ h1, h2, h3, h4 {
   font-weight: 900;
   letter-spacing: 3px;
   margin-bottom: 15px;
-  text-shadow: 0 0 25px rgba(0, 229, 255, 0.3);
+  text-shadow: 0 0 25px rgba(0, 102, 255, 0.6);
 }
 
 .hero-subtitle {
@@ -247,9 +237,6 @@ h1, h2, h3, h4 {
   .hero-subtitle { font-size: 1rem; }
 }
 
-/* ==========================================================================
-   SECCIONES GENERALES Y HIGHLIGHTS
-   ========================================================================== */
 .section {
   padding: 80px 0;
 }
@@ -272,74 +259,6 @@ h1, h2, h3, h4 {
   font-size: 1rem;
 }
 
-/* Highlights Grid */
-.highlights-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 25px;
-}
-
-.highlight-card {
-  background-color: var(--bg-card);
-  border-radius: 12px;
-  overflow: hidden;
-  border: 1px solid var(--border-color);
-  position: relative;
-  transition: var(--transition);
-}
-
-.highlight-card:hover {
-  transform: translateY(-5px);
-  border-color: var(--neon-blue);
-  box-shadow: 0 5px 20px rgba(0, 229, 255, 0.2);
-}
-
-.card-tag {
-  position: absolute;
-  top: 15px;
-  left: 15px;
-  background-color: rgba(5, 11, 20, 0.85);
-  border: 1px solid var(--neon-blue);
-  color: var(--neon-blue);
-  padding: 4px 12px;
-  border-radius: 4px;
-  font-size: 0.8rem;
-  font-weight: bold;
-  z-index: 2;
-  backdrop-filter: blur(4px);
-}
-
-.menu-thumb {
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
-}
-
-.card-content {
-  padding: 20px;
-}
-
-.card-header-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 10px;
-}
-
-.card-header-row h3 {
-  font-size: 1.2rem;
-}
-
-.price {
-  color: var(--neon-blue);
-  font-size: 1.2rem;
-  font-weight: bold;
-  text-shadow: 0 0 8px var(--neon-blue-glow);
-}
-
-/* ==========================================================================
-   CARTA INTERACTIVA
-   ========================================================================== */
 .menu-filters-wrapper {
   display: flex;
   justify-content: center;
@@ -367,9 +286,9 @@ h1, h2, h3, h4 {
 
 .filter-btn.active, .filter-btn:hover {
   background-color: var(--neon-blue);
-  color: #050b14;
+  color: #ffffff;
   border-color: var(--neon-blue);
-  box-shadow: 0 0 15px var(--neon-blue-glow);
+  box-shadow: 0 0 12px var(--neon-blue-glow);
 }
 
 .menu-grid {
@@ -378,9 +297,39 @@ h1, h2, h3, h4 {
   gap: 20px;
 }
 
-/* ==========================================================================
-   SECCIÓN NOSOTROS Y ESTADÍSTICAS
-   ========================================================================== */
+.menu-card {
+  background-color: var(--bg-card);
+  border-radius: 12px;
+  padding: 20px;
+  border: 1px solid var(--border-color);
+  transition: var(--transition);
+}
+
+.menu-card:hover {
+  border-color: var(--neon-blue);
+  transform: translateY(-3px);
+  box-shadow: 0 4px 15px rgba(0, 102, 255, 0.15);
+}
+
+.menu-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 8px;
+}
+
+.menu-card-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.menu-card-price {
+  color: var(--neon-blue);
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
 .about-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -390,6 +339,7 @@ h1, h2, h3, h4 {
 
 .about-image img {
   width: 100%;
+  height: 380px;
   border-radius: 12px;
   border: 1px solid var(--border-color);
   object-fit: cover;
@@ -425,7 +375,6 @@ h1, h2, h3, h4 {
   font-size: 1.5rem;
   font-weight: bold;
   color: var(--neon-blue);
-  text-shadow: 0 0 10px var(--neon-blue-glow);
 }
 
 .stat-label {
@@ -435,17 +384,14 @@ h1, h2, h3, h4 {
 
 @media (max-width: 768px) {
   .about-grid { grid-template-columns: 1fr; }
-  .stats-grid { flex-direction: column; }
 }
 
-/* ==========================================================================
-   CARRUSEL DE RESEÑAS
-   ========================================================================== */
 .testimonial-slider-container {
   position: relative;
   max-width: 800px;
   margin: 0 auto;
   overflow: hidden;
+  touch-action: pan-y;
 }
 
 .testimonial-slider {
@@ -456,7 +402,7 @@ h1, h2, h3, h4 {
 .testimonial-card {
   min-width: 100%;
   background-color: var(--bg-card);
-  padding: 30px;
+  padding: 35px 25px;
   border-radius: 12px;
   border: 1px solid var(--border-color);
   text-align: center;
@@ -503,29 +449,23 @@ h1, h2, h3, h4 {
 .prev-btn { left: 10px; }
 .next-btn { right: 10px; }
 
-.slider-dots {
-  display: flex;
-  justify-content: center;
-  gap: 8px;
-  margin-top: 20px;
-}
-
-.dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
+.progress-bar-container {
+  max-width: 800px;
+  height: 4px;
   background-color: var(--border-color);
-  cursor: pointer;
+  margin: 25px auto 0;
+  border-radius: 2px;
+  overflow: hidden;
 }
 
-.dot.active {
+.progress-bar-fill {
+  height: 100%;
+  width: 20%;
   background-color: var(--neon-blue);
-  box-shadow: 0 0 8px var(--neon-blue-glow);
+  box-shadow: 0 0 10px var(--neon-blue-glow);
+  transition: width 0.4s ease-in-out;
 }
 
-/* ==========================================================================
-   UBICACIÓN Y RESTAURANTE
-   ========================================================================== */
 .location-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -571,11 +511,8 @@ h1, h2, h3, h4 {
   .location-grid { grid-template-columns: 1fr; }
 }
 
-/* ==========================================================================
-   FOOTER
-   ========================================================================== */
 .site-footer {
-  background-color: #05070a;
+  background-color: #040508;
   border-top: 1px solid var(--border-color);
   padding: 50px 0 20px;
   font-size: 0.9rem;
@@ -618,16 +555,13 @@ h1, h2, h3, h4 {
   color: var(--text-muted);
 }
 
-/* ==========================================================================
-   MOBILE STICKY BOTTOM BAR
-   ========================================================================== */
 .mobile-sticky-bar {
   display: none;
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: rgba(10, 12, 16, 0.98);
+  background-color: rgba(7, 9, 14, 0.98);
   border-top: 1px solid var(--border-color);
   padding: 10px 15px;
   z-index: 1000;
@@ -641,7 +575,5 @@ h1, h2, h3, h4 {
 }
 
 @media (max-width: 768px) {
-  .mobile-sticky-bar {
-    display: flex;
-  }
+  .mobile-sticky-bar { display: flex; }
 }

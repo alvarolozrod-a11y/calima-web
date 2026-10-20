@@ -1,77 +1,60 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-  /* ==========================================================================
-     DATOS DE LA CARTA INTERACTIVA - CALIMA
-     ========================================================================== */
   const menuItems = [
     // TABLAS XXL
-    {
-      id: 1,
-      title: "Tabla de Solomillo XXL",
-      category: "tablas",
-      price: "28.90 €",
-      description: "Tierno solomillo de ternera trinchado en piedra caliente, con escamas de sal marina y patatas rústicas.",
-      image: "assets/images/tabla-solomillo.jpg"
-    },
-    {
-      id: 2,
-      title: "Tabla Ibérica Calima",
-      category: "tablas",
-      price: "24.50 €",
-      description: "Jamón de cebo de campo, lomo embuchado, queso curado de oveja, chorizo ibérico y pan con tomate.",
-      image: "assets/images/tabla-ibericos.jpg"
-    },
-    {
-      id: 3,
-      title: "Tabla de Quesos Selección",
-      category: "tablas",
-      price: "19.90 €",
-      description: "Selección de 5 quesos artesanos servidos con mermelada de higo, nueces y tostadas gourmet.",
-      image: "assets/images/tabla-quesos.jpg"
-    },
+    { category: "tablas", title: "Tabla Solomillo", price: "21.00 €" },
+    { category: "tablas", title: "Tabla Costillas", price: "23.00 €" },
+    { category: "tablas", title: "Tabla Entraña", price: "25.00 €" },
+    { category: "tablas", title: "Tabla Salchipapas", price: "14.00 €" },
+    { category: "tablas", title: "Tabla Secreto", price: "21.00 €" },
 
     // HAMBURGUESAS
-    {
-      id: 4,
-      title: "Hamburguesa La Trufada",
-      category: "hamburguesas",
-      price: "14.50 €",
-      description: "200g de vacuno madurado, queso gouda ahumado, cebolla caramelizada y mayonesa de trufa en pan brioche.",
-      image: "assets/images/hamburguesa-trufada.jpg"
-    },
-    {
-      id: 5,
-      title: "Brioche Pulled Pork",
-      category: "hamburguesas",
-      price: "12.90 €",
-      description: "Cerdo deshilachado 12h a baja temperatura, salsa BBQ Calima y coleslaw fresca en pan brioche.",
-      image: "assets/images/brioche-pulled-pork.jpg"
-    },
+    { category: "hamburguesas", title: "La Clásica", price: "Consulte en local" },
+    { category: "hamburguesas", title: "La Cheese Lovers", price: "Consulte en local" },
+    { category: "hamburguesas", title: "La Trufada", price: "Consulte en local" },
+    { category: "hamburguesas", title: "La Castiza", price: "Consulte en local" },
+    { category: "hamburguesas", title: "La Emmy", price: "Consulte en local" },
+    { category: "hamburguesas", title: "La Nashville", price: "Consulte en local" },
 
-    // ENTRANTES
-    {
-      id: 6,
-      title: "Nachos Calima XXL",
-      category: "entrantes",
-      price: "13.90 €",
-      description: "Totopos crujientes con queso cheddar fundido, chili con carne, jalapeños, pico de gallo y crema agria.",
-      image: "assets/images/nachos-xxl.jpg"
-    },
+    // PARA COMPARTIR
+    { category: "compartir", title: "Focaccia para dipear", price: "Consulte en local" },
+    { category: "compartir", title: "Patatas Búfalo", price: "Consulte en local" },
+    { category: "compartir", title: "Patatas Bravas Tradicionales", price: "6.00 €" },
+    { category: "compartir", title: "Tequeños", price: "7.50 €" },
+    { category: "compartir", title: "Bacon Cheese Fries", price: "7.00 €" },
+    { category: "compartir", title: "Gyozas Fritas", price: "6.00 €" },
+    { category: "compartir", title: "Fingers de Pollo", price: "8.00 €" },
+    { category: "compartir", title: "Croquetas Cremosas", price: "8.50 €" },
+    { category: "compartir", title: "Tortilla de Patatas", price: "7.00 €" },
+    { category: "compartir", title: "Tortilla de Patatas Carbonara", price: "8.00 €" },
+    { category: "compartir", title: "Focaccia de Burrata", price: "11.00 €" },
+    { category: "compartir", title: "Ensalada César", price: "10.00 €" },
+    { category: "compartir", title: "Nachos Texanos", price: "11.00 €" },
+    { category: "compartir", title: "Ñoquis Bravos", price: "8.00 €" },
+    { category: "compartir", title: "Alitas de Pollo", price: "9.50 €" },
+    { category: "compartir", title: "Corn Ribs", price: "8.00 €" },
+    { category: "compartir", title: "Ensalada de Burrata", price: "10.00 €" },
+    { category: "compartir", title: "Pescaito Frito", price: "10.00 €" },
+
+    // BRIOCHES
+    { category: "brioches", title: "Brioche Tinga de Pollo", price: "Consulte en local" },
+    { category: "brioches", title: "Brioche Pulled Pork", price: "Consulte en local" },
+    { category: "brioches", title: "Brioche Panceta Frita", price: "Consulte en local" },
+    { category: "brioches", title: "Brioche Salchicha", price: "Consulte en local" },
+    { category: "brioches", title: "Brioche Ternera Melosa", price: "Consulte en local" },
+
+    // OPCIÓN FIT
+    { category: "fit", title: "Pollo Marinado", price: "15.00 €" },
+    { category: "fit", title: "Entraña Fit", price: "15.00 €" },
+    { category: "fit", title: "Seitán Fit", price: "15.00 €" },
+    { category: "fit", title: "Secreto Fit", price: "15.00 €" },
 
     // POSTRES
-    {
-      id: 7,
-      title: "Tarta de Queso Fluida",
-      category: "postres",
-      price: "6.50 €",
-      description: "Receta artesana horneada a diario con centro cremoso de queso y base de galleta de mantequilla.",
-      image: "assets/images/tarta-queso.jpg"
-    }
+    { category: "postres", title: "Brownie Chocolate", price: "Consulte en local" },
+    { category: "postres", title: "Donut Caramelizado", price: "Consulte en local" },
+    { category: "postres", title: "Cookie Americana Chocolate Blanco", price: "Consulte en local" }
   ];
 
-  /* ==========================================================================
-     RENDERIZADO Y FILTRADO DE CARTA
-     ========================================================================== */
   const menuGrid = document.getElementById('menu-grid');
   const filterBtns = document.querySelectorAll('.filter-btn');
 
@@ -82,22 +65,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
     filteredItems.forEach(item => {
       const card = document.createElement('div');
-      card.className = 'highlight-card';
+      card.className = 'menu-card';
       card.innerHTML = `
-        <img src="${item.image}" alt="${item.title}" class="menu-thumb" loading="lazy">
-        <div class="card-content">
-          <div class="card-header-row">
-            <h3>${item.title}</h3>
-            <span class="price">${item.price}</span>
-          </div>
-          <p>${item.description}</p>
+        <div class="menu-card-header">
+          <h3 class="menu-card-title">${item.title}</h3>
+          <span class="menu-card-price">${item.price}</span>
         </div>
       `;
       menuGrid.appendChild(card);
     });
   }
 
-  // Filtrado al hacer clic
   filterBtns.forEach(btn => {
     btn.addEventListener('click', () => {
       filterBtns.forEach(b => b.classList.remove('active'));
@@ -107,41 +85,21 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Categoría activa por defecto: Tablas XXL
   renderMenu('tablas');
 
-  /* ==========================================================================
-     CARRUSEL INTERACTIVO DE RESEÑAS
-     ========================================================================== */
   const slider = document.getElementById('testimonialSlider');
   const cards = document.querySelectorAll('.testimonial-card');
   const prevBtn = document.getElementById('prevReview');
   const nextBtn = document.getElementById('nextReview');
-  const dotsContainer = document.getElementById('sliderDots');
+  const progressBarFill = document.getElementById('progressBarFill');
 
   let currentIndex = 0;
   const totalSlides = cards.length;
 
-  cards.forEach((_, index) => {
-    const dot = document.createElement('div');
-    dot.classList.add('dot');
-    if (index === 0) dot.classList.add('active');
-    dot.addEventListener('click', () => goToSlide(index));
-    dotsContainer.appendChild(dot);
-  });
-
-  const dots = document.querySelectorAll('.dot');
-
   function updateSlider() {
     slider.style.transform = `translateX(-${currentIndex * 100}%)`;
-    dots.forEach((dot, index) => {
-      dot.classList.toggle('active', index === currentIndex);
-    });
-  }
-
-  function goToSlide(index) {
-    currentIndex = index;
-    updateSlider();
+    const progressWidth = ((currentIndex + 1) / totalSlides) * 100;
+    progressBarFill.style.width = `${progressWidth}%`;
   }
 
   function nextSlide() {
@@ -157,12 +115,12 @@ document.addEventListener('DOMContentLoaded', () => {
   nextBtn.addEventListener('click', nextSlide);
   prevBtn.addEventListener('click', prevSlide);
 
-  let autoSlide = setInterval(nextSlide, 5000);
+  let autoSlide = setInterval(nextSlide, 4000);
 
   const sliderContainer = document.querySelector('.testimonial-slider-container');
   sliderContainer.addEventListener('mouseenter', () => clearInterval(autoSlide));
   sliderContainer.addEventListener('mouseleave', () => {
-    autoSlide = setInterval(nextSlide, 5000);
+    autoSlide = setInterval(nextSlide, 4000);
   });
 
   let touchStartX = 0;
@@ -178,7 +136,9 @@ document.addEventListener('DOMContentLoaded', () => {
   }, { passive: true });
 
   function handleSwipe() {
-    if (touchEndX < touchStartX - 50) nextSlide();
-    if (touchEndX > touchStartX + 50) prevSlide();
+    if (touchEndX < touchStartX - 40) nextSlide();
+    if (touchEndX > touchStartX + 40) prevSlide();
   }
+
+  updateSlider();
 });

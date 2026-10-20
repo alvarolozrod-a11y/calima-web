@@ -3,68 +3,51 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CALIMA | Tablas XXL y Experiencia Gastronómica Moderna</title>
-  <meta name="description" content="Bienvenido a Calima. Especialistas en Tablas XXL para compartir, hamburguesas gourmet y cocina moderna. ¡Llámanos o ven a visitarnos!">
-  <meta name="keywords" content="Calima, Restaurante Calima, Tablas XXL, Hamburguesas Gourmet, Solomillo, Cenar, Reservas">
+  <title>CALIMA | Tablas XXL, Carta & Ambiente Moderno en Alcorcón</title>
+  <meta name="description" content="Bienvenido a Calima en Alcorcón. Disfruta de nuestras famosas Tablas XXL, hamburguesas gourmet, picoteo y ambiente único con shishas y copas.">
+  <meta name="keywords" content="Calima Alcorcón, Tablas XXL Alcorcón, Hamburguesas Alcorcón, Shishas Alcorcón, Restaurante Calima">
   
-  <!-- OpenGraph para compartir en WhatsApp y Redes Sociales -->
-  <meta property="og:title" content="CALIMA | Tablas XXL y Sabor A lo Grande">
-  <meta property="og:description" content="¿Hambre real? Descubre nuestras legendarias Tablas XXL, Hamburguesa La Trufada y Brioche Pulled Pork en Calima.">
-  <meta property="og:image" content="assets/images/tabla-solomillo.jpg">
+  <meta property="og:title" content="CALIMA | Tablas XXL y Gastronomía Moderna">
+  <meta property="og:description" content="Especialistas en Tablas XXL, hamburguesas, raciones para compartir y shishas en Alcorcón.">
+  <meta property="og:image" content="assets/images/hero-bg.jpg">
   <meta property="og:type" content="restaurant">
 
-  <!-- Estilos CSS -->
   <link rel="stylesheet" href="assets/css/styles.css">
 
-  <!-- Marcado Estructurado Schema.org (JSON-LD) para SEO Local -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Restaurant",
     "name": "Calima",
-    "image": "assets/images/tabla-solomillo.jpg",
-    "@id": "https://calimarestaurante.com/#restaurant",
-    "url": "https://calimarestaurante.com",
+    "image": "assets/images/hero-bg.jpg",
+    "@id": "https://calimaalcorcon.com/#restaurant",
+    "url": "https://calimaalcorcon.com",
     "telephone": "+34912345678",
     "priceRange": "€€",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Calle de la Gastronomía, 12",
-      "addressLocality": "Ciudad",
-      "postalCode": "28001",
+      "streetAddress": "Calle Porto Cristo, 3",
+      "addressLocality": "Alcorcón",
+      "postalCode": "28924",
       "addressCountry": "ES"
     },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 40.416775,
-      "longitude": -3.703790
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.2",
+      "reviewCount": "180"
     },
-    "openingHoursSpecification": [
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-        "opens": "13:00",
-        "closes": "16:00"
-      },
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-        "opens": "20:00",
-        "closes": "23:30"
-      }
-    ],
-    "hasMenu": "https://calimarestaurante.com/#carta",
+    "hasMenu": "https://calimaalcorcon.com/#carta",
     "servesCuisine": ["Española", "Parrilla", "Hamburguesas"]
   }
   </script>
 </head>
 <body>
 
-  <!-- HEADER FIJO STICKY -->
+  <!-- HEADER -->
   <header class="site-header" id="header">
     <div class="container header-container">
       <a href="#" class="brand-logo">
-        <span class="logo-neon">CALIMA</span> <span class="logo-sub">TABLAS XXL</span>
+        <span class="logo-neon">CALIMA</span> <span class="logo-sub">ALCORCÓN</span>
       </a>
       <nav class="main-nav">
         <ul>
@@ -87,92 +70,43 @@
   <section class="hero-section">
     <div class="hero-overlay"></div>
     <div class="container hero-content">
-      <div class="badge-neon">⚡ Gastronomía Moderna & Sabor XXL</div>
+      <div class="badge-neon">⚡ Tablas XXL • Hamburguesas • Shishas • Copas</div>
       <h1 class="brand-hero-name">CALIMA</h1>
-      <p class="hero-subtitle">Donde la cocina urbana y las raciones colosales se unen para crear una experiencia inolvidable.</p>
+      <p class="hero-subtitle">La perfecta fusión entre comida potente para compartir, ambiente moderno y el mejor espacio para tomar algo en Alcorcón.</p>
       <div class="hero-cta-group">
         <a href="tel:+34912345678" class="btn btn-neon btn-lg">
           <svg class="icon" viewBox="0 0 24 24"><path fill="currentColor" d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
-          Reserva / Llámanos
+          Llámanos / Reservas
         </a>
         <a href="#ubicacion" class="btn btn-outline btn-lg">
-          <svg class="icon" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          <svg class="icon" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5-2.5z"/></svg>
           Cómo Llegar
         </a>
       </div>
     </div>
   </section>
 
-  <!-- PLATOS ESTRELLA (HIGHLIGHTS) -->
-  <section class="section section-dark-accent">
-    <div class="container">
-      <div class="section-header text-center">
-        <h2 class="section-title">Especialidades Calima</h2>
-        <p class="section-subtitle">Los platos estrella más aclamados por nuestra gente</p>
-      </div>
-      <div class="highlights-grid">
-        
-        <div class="highlight-card">
-          <div class="card-tag">⭐ Top Estelar</div>
-          <img src="assets/images/tabla-solomillo.jpg" alt="Tabla de Solomillo XXL" class="menu-thumb" loading="lazy">
-          <div class="card-content">
-            <div class="card-header-row">
-              <h3>Tabla de Solomillo XXL</h3>
-              <span class="price">28.90 €</span>
-            </div>
-            <p>Tierno solomillo de ternera trinchado en piedra caliente, servido con escamas de sal marina, patatas rústicas y salsas de la casa.</p>
-          </div>
-        </div>
-
-        <div class="highlight-card">
-          <div class="card-tag">⚡ Recomendado</div>
-          <img src="assets/images/hamburguesa-trufada.jpg" alt="Hamburguesa La Trufada" class="menu-thumb" loading="lazy">
-          <div class="card-content">
-            <div class="card-header-row">
-              <h3>Hamburguesa La Trufada</h3>
-              <span class="price">14.50 €</span>
-            </div>
-            <p>200g de carne madurada de vacuno, queso gouda ahumado, cebolla caramelizada al Pedro Ximénez y mayonesa pura de trufa negra en pan brioche.</p>
-          </div>
-        </div>
-
-        <div class="highlight-card">
-          <div class="card-tag">👑 Favorito</div>
-          <img src="assets/images/brioche-pulled-pork.jpg" alt="Brioche Pulled Pork" class="menu-thumb" loading="lazy">
-          <div class="card-content">
-            <div class="card-header-row">
-              <h3>Brioche Pulled Pork</h3>
-              <span class="price">12.90 €</span>
-            </div>
-            <p>Cerdo deshilachado cocinado 12 horas a baja temperatura, bañado en salsa BBQ estilo Calima y ensaladilla coleslaw en pan brioche.</p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- CARTA INTERACTIVA -->
+  <!-- CARTA INTERACTIVA COMPLETA DE COMIDAS -->
   <section class="section" id="carta">
     <div class="container">
       <div class="section-header text-center">
-        <h2 class="section-title">Carta Interactiva</h2>
-        <p class="section-subtitle">Selecciona tus favoritos y prepárate para disfrutar</p>
+        <h2 class="section-title">Nuestra Carta de Comidas</h2>
+        <p class="section-subtitle">Elige tu categoría favorita y descubre nuestra propuesta gastronómica real</p>
       </div>
 
-      <!-- Filtros por categoría -->
       <div class="menu-filters-wrapper">
         <div class="menu-filters" id="menu-filters">
           <button class="filter-btn active" data-category="tablas">Tablas XXL</button>
           <button class="filter-btn" data-category="hamburguesas">Hamburguesas</button>
-          <button class="filter-btn" data-category="entrantes">Raciones & Entrantes</button>
-          <button class="filter-btn" data-category="postres">Postres Caseros</button>
+          <button class="filter-btn" data-category="compartir">Para Compartir</button>
+          <button class="filter-btn" data-category="brioches">Brioches</button>
+          <button class="filter-btn" data-category="fit">Opción Fit</button>
+          <button class="filter-btn" data-category="postres">Postres</button>
         </div>
       </div>
 
-      <!-- Cuadrícula de Platos -->
       <div class="menu-grid" id="menu-grid">
-        <!-- Los platos se renderizan dinámicamente con JS -->
+        <!-- Renderizado vía JavaScript -->
       </div>
     </div>
   </section>
@@ -182,27 +116,22 @@
     <div class="container">
       <div class="about-grid">
         <div class="about-image">
-          <img src="assets/images/sobre-nosotros.jpg" alt="Ambiente de Calima" loading="lazy">
+          <img src="assets/images/ambiente-cachimba.jpg" alt="Mesas en Calima estilo oscuro con hamburguesas y cachimba" loading="lazy">
         </div>
         <div class="about-content">
-          <span class="badge-neon">El Concepto Calima</span>
-          <h2>Innovación Gastronómica. Pasión por Compartir.</h2>
-          <p>En <strong>Calima</strong> combinamos una estética moderna y vibrante con una cocina que rinde culto a las porciones generosas y de calidad. Nacimos con la idea de transformar el concepto de salir a cenar en una auténtica experiencia social.</p>
-          <p>Nuestras Tablas XXL son el centro de la mesa, diseñadas para romper la rutina y disfrutar entre amigos o en familia. Fuego, calidad e ingredientes seleccionados a diario son nuestro sello personal.</p>
+          <span class="badge-neon">El Ambiente Calima</span>
+          <h2>Mucho Más Que Comer: Gastronomía, Shishas & Tardeo</h2>
+          <p>En <strong>Calima Alcorcón</strong> no solo vienes a disfrutar de unas raciones brutales o unas buenas hamburguesas artesanas; hemos creado un punto de encuentro con estilo moderno, iluminación envolvente y un ambiente idóneo para tomar algo con amigos.</p>
+          <p>Alarga la sobremesa o empieza la noche probando nuestras shishas de sabores premium, acompañadas de la mejor selección de cervezas frías, cócteles y copas en un espacio vanguardista.</p>
           
-          <!-- Métricas e Impacto Local -->
           <div class="stats-grid">
             <div class="stat-card">
-              <span class="stat-number">4.9 ★</span>
-              <span class="stat-label">Valoración Google</span>
-            </div>
-            <div class="stat-card">
-              <span class="stat-number">+18K</span>
-              <span class="stat-label">Clientes Satisfechos</span>
+              <span class="stat-number">4.2 ★</span>
+              <span class="stat-label">Valoración Real en Google Maps</span>
             </div>
             <div class="stat-card">
               <span class="stat-number">100%</span>
-              <span class="stat-label">Espíritu Moderno</span>
+              <span class="stat-label">Ambiente Moderno & Shishas</span>
             </div>
           </div>
 
@@ -211,12 +140,12 @@
     </div>
   </section>
 
-  <!-- PRUEBA SOCIAL / RESEÑAS -->
+  <!-- PRUEBA SOCIAL / RESEÑAS REALES -->
   <section class="section" id="opiniones">
     <div class="container">
       <div class="section-header text-center">
-        <h2 class="section-title">Experiencias Reales</h2>
-        <p class="section-subtitle">Lo que opinan quienes ya han vivido el concepto Calima</p>
+        <h2 class="section-title">Reseñas Reales de Google Maps</h2>
+        <p class="section-subtitle">Lo que dicen nuestros clientes tras visitarnos en Alcorcón</p>
       </div>
 
       <div class="testimonial-slider-container">
@@ -225,27 +154,45 @@
           
           <div class="testimonial-card">
             <div class="stars">★★★★★</div>
-            <p class="review-text">"Calima superó todas nuestras expectativas. La Tabla de Solomillo XXL estaba en su punto perfecto y la ambientación del local es sencillamente genial."</p>
+            <p class="review-text">"Sitio muy top en Alcorcón. Las tablas XXL son gigantescas y perfectas para ir en grupo. Luego nos quedamos tomando unas copas y shisha, la atención de los camareros de 10."</p>
             <div class="reviewer-info">
-              <span class="reviewer-name">Carlos Mendoza</span>
+              <span class="reviewer-name">David G.</span>
               <span class="reviewer-type">Local Guide • Google Maps</span>
             </div>
           </div>
 
           <div class="testimonial-card">
             <div class="stars">★★★★★</div>
-            <p class="review-text">"La Hamburguesa La Trufada es espectacular. Un ambiente muy moderno, trato excelente y comida de 10. ¡Repetiremos seguro!"</p>
+            <p class="review-text">"Increíble la hamburguesa La Trufada y los tequeños. El ambiente con luces y la música suave te invita a quedarte charlando tranquilamente."</p>
             <div class="reviewer-info">
-              <span class="reviewer-name">Elena Gómez</span>
-              <span class="reviewer-type">Cliente Frecuente</span>
+              <span class="reviewer-name">Laura M.</span>
+              <span class="reviewer-type">Reseña Verificada • Google Maps</span>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="stars">★★★★☆</div>
+            <p class="review-text">"Las patatas búfalo y la tabla de entraña riquísimas. Un local moderno, genial para cenar bien de precio y luego pedirte una cachimba entre amigos."</p>
+            <div class="reviewer-info">
+              <span class="reviewer-name">Adrian R.</span>
+              <span class="reviewer-type">Local Guide • Google Maps</span>
             </div>
           </div>
 
           <div class="testimonial-card">
             <div class="stars">★★★★★</div>
-            <p class="review-text">"Perfecto para ir con amigos. El Brioche Pulled Pork y las tablas para compartir son abundantes y deliciosas."</p>
+            <p class="review-text">"Servicio atento y rápido. Recomendados totalmente los brioches y los nachos texanos. El ambiente nocturno para tomar algo es un acierto total."</p>
             <div class="reviewer-info">
-              <span class="reviewer-name">Marcos Rivas</span>
+              <span class="reviewer-name">Carmen P.</span>
+              <span class="reviewer-type">Reseña Verificada • Google Maps</span>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p class="review-text">"Buenas raciones, lugar moderno y agradable. Las cachimbas tiran genial y las cervezas las sirven bien frías. Muy recomendable en la zona."</p>
+            <div class="reviewer-info">
+              <span class="reviewer-name">Sergio B.</span>
               <span class="reviewer-type">Local Guide • Google Maps</span>
             </div>
           </div>
@@ -253,73 +200,74 @@
         </div>
         <button class="slider-btn next-btn" id="nextReview" aria-label="Siguiente reseña">❯</button>
       </div>
-      <div class="slider-dots" id="sliderDots"></div>
+
+      <div class="progress-bar-container">
+        <div class="progress-bar-fill" id="progressBarFill"></div>
+      </div>
     </div>
   </section>
 
-  <!-- RESTAURANTE Y UBICACIÓN -->
+  <!-- UBICACIÓN Y CONTACTO -->
   <section class="section section-dark-accent" id="ubicacion">
     <div class="container">
       <div class="section-header text-center">
-        <h2 class="section-title">Encuéntranos</h2>
-        <p class="section-subtitle">Ven a conocer nuestro espacio y disfrutar de la experiencia Calima</p>
+        <h2 class="section-title">¿Dónde Estamos?</h2>
+        <p class="section-subtitle">Te esperamos en Calima Alcorcón</p>
       </div>
 
       <div class="location-grid">
         <div class="location-info">
           <div class="info-block">
             <h3>📍 Dirección</h3>
-            <p>Calle de la Gastronomía, 12<br>28001 Madrid, España</p>
+            <p>Calle Porto Cristo, 3<br>28924 Alcorcón, Madrid</p>
             <a href="https://maps.google.com" target="_blank" rel="noopener" class="btn btn-neon btn-sm mt-10">Abrir en Google Maps</a>
           </div>
 
           <div class="info-block">
-            <h3>🕒 Horarios</h3>
+            <h3>🕒 Horario habitual</h3>
             <ul class="hours-list">
-              <li><span>Lunes:</span> <span>Cerrado por descanso</span></li>
-              <li><span>Martes - Jueves:</span> <span>13:00 - 16:00 | 20:00 - 23:30</span></li>
-              <li><span>Viernes - Sábado:</span> <span>13:00 - 16:30 | 20:00 - 00:00</span></li>
-              <li><span>Domingo:</span> <span>13:00 - 16:30 | 20:00 - 23:30</span></li>
+              <li><span>Martes - Jueves:</span> <span>13:00 - 00:00</span></li>
+              <li><span>Viernes - Sábado:</span> <span>13:00 - 02:00</span></li>
+              <li><span>Domingo:</span> <span>13:00 - 00:00</span></li>
             </ul>
           </div>
 
           <div class="info-block">
-            <h3>📞 Reservas Telefónicas</h3>
-            <p>Llámanos para reservar tu mesa al instante:</p>
+            <h3>📞 Contacto y Reservas</h3>
+            <p>Haz tu reserva de mesa o infórmate al instante:</p>
             <a href="tel:+34912345678" class="phone-link">+34 912 34 56 78</a>
           </div>
         </div>
 
         <div class="location-map">
           <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.38712345678!2d-3.703790!3d40.416775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDI1JzAwLjQiTiAzwrA0Mic00C4yIlc!5e0!3m2!1ses!2ses!4v1600000000000!5m2!1ses!2ses" 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3040.5!2d-3.8120!3d40.3445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDIwJzQwLjIiTiAzwrA0OCc0My4yIlc!5e0!3m2!1ses!2ses!4v1600000000000!5m2!1ses!2ses" 
             width="100%" 
             height="100%" 
             style="border:0; min-height:350px; border-radius:12px;" 
             allowfullscreen="" 
             loading="lazy"
-            title="Ubicación de Calima en Google Maps">
+            title="Ubicación de Calima Alcorcón en Google Maps">
           </iframe>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- FOOTER Y NAP SEO LOCAL -->
+  <!-- FOOTER -->
   <footer class="site-footer">
     <div class="container footer-container">
       <div class="footer-brand">
         <a href="#" class="brand-logo">
-          <span class="logo-neon">CALIMA</span> <span class="logo-sub">TABLAS XXL</span>
+          <span class="logo-neon">CALIMA</span> <span class="logo-sub">ALCORCÓN</span>
         </a>
-        <p>Restaurante moderno especializado en Tablas XXL y gastronomía de vanguardia para compartir.</p>
+        <p>Tu sitio de confianza para comer a lo grande, disfrutar de buen ambiente moderno y tomar algo con shishas en Alcorcón.</p>
       </div>
       
       <div class="footer-contact">
-        <h4>CALIMA RESTAURANTE</h4>
-        <p>Calle de la Gastronomía, 12, 28001 Madrid</p>
+        <h4>CALIMA ALCORCÓN</h4>
+        <p>Calle Porto Cristo, 3, 28924 Alcorcón, Madrid</p>
         <p>Teléfono: +34 912 34 56 78</p>
-        <p>Email: contacto@calimarestaurante.com</p>
       </div>
 
       <div class="footer-social">
@@ -327,20 +275,20 @@
         <div class="social-links">
           <a href="#" aria-label="Instagram">Instagram</a>
           <a href="#" aria-label="Facebook">Facebook</a>
-          <a href="#" aria-label="TripAdvisor">TripAdvisor</a>
+          <a href="#" aria-label="Google Maps">Google Maps</a>
         </div>
       </div>
     </div>
     <div class="footer-bottom text-center">
-      <p>&copy; 2026 CALIMA. Todos los derechos reservados.</p>
+      <p>&copy; 2026 CALIMA ALCORCÓN. Todos los derechos reservados.</p>
     </div>
   </footer>
 
-  <!-- MOBILE STICKY BOTTOM BAR -->
+  <!-- BARRA FIJA MÓVIL -->
   <div class="mobile-sticky-bar">
     <a href="tel:+34912345678" class="btn btn-neon btn-full">
       <svg class="icon" viewBox="0 0 24 24"><path fill="currentColor" d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
-      Llámanos Ahora
+      Llámanos
     </a>
     <a href="#ubicacion" class="btn btn-outline btn-full">
       <svg class="icon" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
@@ -348,7 +296,6 @@
     </a>
   </div>
 
-  <!-- JavaScript Principal -->
   <script src="assets/js/app.js"></script>
 </body>
 </html>
