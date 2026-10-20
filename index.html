@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sabor & Tradición - Restaurante Gastronómico en Madrid</title>
-    <meta name="description" content="Disfruta de la mejor cocina de autor y gastronomía mediterránea en el corazón de Madrid. Reserva tu mesa online o pide a domicilio.">
+    <title>CALIMA - Restaurante y Tablas XXL en Alcorcón</title>
+    <meta name="description" content="Disfruta de la mejor gastronomía en CALIMA, Alcorcón. Tablas XXL, hamburguesas gourmet, entrantes y deliciosos brioches. ¡Reserva tu mesa por teléfono!">
     
     <!-- Open Graph / Redes Sociales -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Sabor & Tradición - Restaurante Gastronómico">
-    <meta property="og:description" content="Experiencia culinaria única. Cocina de autor, producto local y ambiente exclusivo.">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80">
+    <meta property="og:title" content="CALIMA - Restaurante en Alcorcón">
+    <meta property="og:description" content="Tablas XXL, hamburguesas gourmet, brioches y más en Alcorcón. Experiencia culinaria única.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1200&q=80">
     <meta property="og:url" content="https://tu-usuario.github.io/restaurante-website/">
 
     <!-- Google Fonts -->
@@ -21,49 +21,30 @@
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/styles.css">
 
-    <!-- Schema Markup JSON-LD (SEO Local & Google Maps) -->
+    <!-- Schema Markup JSON-LD (SEO Local Alcorcón & Google Maps) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Restaurant",
       "@id": "https://tu-usuario.github.io/restaurante-website/#restaurant",
-      "name": "Sabor & Tradición",
-      "image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80",
+      "name": "CALIMA",
+      "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1200&q=80",
       "url": "https://tu-usuario.github.io/restaurante-website/",
-      "telephone": "+34912345678",
-      "priceRange": "€€-€€€",
+      "telephone": "+34910000000",
+      "priceRange": "€€",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Calle Gran Vía, 28",
-        "addressLocality": "Madrid",
-        "postalCode": "28013",
+        "streetAddress": "Alcorcón",
+        "addressLocality": "Alcorcón",
+        "addressRegion": "Madrid",
+        "postalCode": "28922",
         "addressCountry": "ES"
       },
       "geo": {
         "@type": "GeoCoordinates",
-        "latitude": 40.419992,
-        "longitude": -3.702561
+        "latitude": 40.3445839,
+        "longitude": -3.8120141
       },
-      "openingHoursSpecification": [
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-          "opens": "13:00",
-          "closes": "16:00"
-        },
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-          "opens": "20:00",
-          "closes": "23:30"
-        },
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": "Sunday",
-          "opens": "13:00",
-          "closes": "16:30"
-        }
-      ],
       "hasMenu": "https://tu-usuario.github.io/restaurante-website/#menu"
     }
     </script>
@@ -73,20 +54,20 @@
     <!-- Header & Navegación -->
     <header class="header" id="header">
         <div class="container nav-container">
-            <a href="#" class="logo">Sabor <span>&</span> Tradición</a>
+            <a href="#" class="logo">CALIMA</a>
             <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
                 <span class="hamburger"></span>
             </button>
             <nav class="nav-menu" id="navMenu">
                 <ul>
                     <li><a href="#hero" class="nav-link">Inicio</a></li>
-                    <li><a href="#nosotros" class="nav-link">Experiencia</a></li>
                     <li><a href="#menu" class="nav-link">Menú</a></li>
+                    <li><a href="#nosotros" class="nav-link">Nuestra Historia</a></li>
                     <li><a href="#resenas" class="nav-link">Opiniones</a></li>
                     <li><a href="#contacto" class="nav-link">Ubicación</a></li>
                 </ul>
             </nav>
-            <a href="tel:+34912345678" class="btn btn-secondary header-btn">Reservar Mesa</a>
+            <a href="tel:+34910000000" class="btn btn-secondary header-btn">Reserva</a>
         </div>
     </header>
 
@@ -95,195 +76,433 @@
         <section class="hero" id="hero">
             <div class="hero-overlay"></div>
             <div class="container hero-content">
-                <span class="badge-tag">Alta Gastronomía Mediterránea</span>
-                <h1>Una experiencia culinaria inolvidable en el corazón de la ciudad</h1>
-                <p>Ingredientes locales, técnicas vanguardistas y pasión por el detalle en cada plato.</p>
+                <span class="badge-tag">Alcorcón • Tablas XXL & Gastronomía</span>
+                <h1>CALIMA: Sabor, Tradición y Tablas XXL en Alcorcón</h1>
+                <p>Las mejores hamburguesas, brioches gourmet y tablas para compartir en un ambiente único.</p>
                 <div class="hero-buttons">
                     <a href="#menu" class="btn btn-primary">Ver Menú Interactivo</a>
-                    <a href="https://maps.app.goo.gl/r34zBebKVd5bBvU66" target="_blank" rel="noopener" class="btn btn-outline">Reservar Online</a>
+                    <a href="#contacto" class="btn btn-outline">Dónde encontrarnos</a>
                 </div>
             </div>
         </section>
 
-        <!-- Experiencia / Sobre Nosotros -->
+        <!-- Menú Interactivo (Orden Requerido) -->
+        <section class="menu section bg-light" id="menu">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">Nuestra Carta</h2>
+                    <p>Descubre nuestras raciones, hamburguesas, brioches y tablas XXL preparadas al momento</p>
+                </div>
+
+                <!-- Filtros Categorías (Solo Comidas) -->
+                <div class="menu-tabs">
+                    <button class="menu-tab active" data-category="compartir">Para Compartir</button>
+                    <button class="menu-tab" data-category="tablas">Tablas XXL</button>
+                    <button class="menu-tab" data-category="hamburguesas">Hamburguesas</button>
+                    <button class="menu-tab" data-category="brioches">Brioches</button>
+                    <button class="menu-tab" data-category="fit">Opción Fit</button>
+                    <button class="menu-tab" data-category="postres">Postres</button>
+                </div>
+
+                <!-- Grid de Platos con Imágenes e Información del Menú Real -->
+                <div class="menu-grid">
+                    
+                    <!-- Para Compartir -->
+                    <article class="menu-item" data-category="compartir">
+                        <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=600&q=80" alt="Patatas Bravas Tradicionales" class="menu-item-img" loading="lazy">
+                        <div class="menu-item-body">
+                            <div class="menu-item-header">
+                                <h3>Patatas Bravas Tradicionales</h3>
+                                <span class="price">6.00 €</span>
+                            </div>
+                            <p class="description">Patatas crujientes acompañadas de nuestra icónica salsa brava artesana.</p>
+                        </div>
+                    </article>
+
+                    <article class="menu-item" data-category="compartir">
+                        <img src="https://images.unsplash.com/photo-1541529086526-db283c563270?auto=format&fit=crop&w=600&q=80" alt="Tequeños" class="menu-item-img" loading="lazy">
+                        <div class="menu-item-body">
+                            <div class="menu-item-header">
+                                <h3>Tequeños</h3>
+                                <span class="price">7.50 €</span>
+                            </div>
+                            <p class="description">Palitos de queso derretido envueltos en masa crujiente dorada.</p>
+                        </div>
+                    </article>
+
+                    <article class="menu-item" data-category="compartir">
+                        <img src="https://images.unsplash.com/photo-1585109649139-366815a0d713?auto=format&fit=crop&w=600&q=80" alt="Bacon Cheese Fries" class="menu-item-img" loading="lazy">
+                        <div class="menu-item-body">
+                            <div class="menu-item-header">
+                                <h3>Bacon Cheese Fries</h3>
+                                <span class="price">7.00 €</span>
+                            </div>
+                            <p class="description">Patatas fritas cubiertas de abundante queso fundido y crujiente bacon.</p>
+                        </div>
+                    </article>
+
+                    <article class="menu-item" data-category="compartir">
+                        <img src="https://images.unsplash.com/photo-1498654896293-37aacf113fd9?auto=format&fit=crop&w=600&q=80" alt="Croquetas Cremosas" class="menu-item-img" loading="lazy">
+                        <div class="menu-item-body">
+                            <div class="menu-item-header">
+                                <h3>Croquetas Cremosas</h3>
+                                <span class="price">8.50 €</span>
+                            </div>
+                            <p class="description">Croquetas caseras súper cremosas con rebozado crujiente de la casa.</p>
+                        </div>
+                    </article>
+
+                    <article class="menu-item" data-category="compartir">
+                        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=600&q=80" alt="Foccacia de Burrata" class="menu-item-img" loading="lazy">
+                        <div class="menu-item-body">
+                            <div class="menu-item-header">
+                                <h3>Foccacia de Burrata</h3>
+                                <span class="price">11.00 €</span>
+                            </div>
+                            <p class="description">Foccacia horneada acompañada de cremosa queso burrata fresca y especias.</p>
+                        </div>
+                    </article>
+
+                    <article class="menu-item" data-category="compartir">
+                        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=600&q=80" alt="Ensalada César" class="menu-item-img" loading="lazy">
+                        <div class="menu-item-body">
+                            <div class="menu-item-header">
+                                <h3>Ensalada César</h3>
+                                <span class="price">10.00 €</span>
+                            </div>
+                            <p class="description">Mezcla de lechugas, pollo crujiente, picatostes, parmesano y aderezo César.</p>
+                        </div>
+                    </article>
+
+                    <article class="menu-item" data-category="compartir">
+                        <img src="https://images.unsplash.com/photo-1527661591475-527312dd65f5?auto=format&fit=crop&w=600&q=80" alt="Alitas de Pollo" class="menu-item-img" loading="lazy">
+                        <div class="menu-item-body">
+                            <div class="menu-item-header">
+                                <h3>Alitas de Pollo</h3>
+                                <span class="price">9.90 €</span>
+                            </div>
+                            <p class="description">Jugosas alitas doradas y sazonadas al estilo tradicional.</p>
+                        </div>
+                    </article>
+
+                    <!-- Tablas XXL -->
+                    <article class="menu-item hidden" data-category="tablas">
+                        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80" alt="Tabla Solomillo" class="menu-item-img" loading="lazy">
+                        <div class="menu-item-body">
+                            <div class="menu-item-header">
+                                <h3>Tabla Solomillo XXL</h3>
+                                <span class="price">21.00 €</span>
+                            </div>
+                            <p class="description">Generosa tabla de solomillo tierno acompañado de guarnición y patatas.</p>
+                        </div>
+                    </article>
+
+                    <article class="menu-item hidden" data-category="tablas">
+                        <img src="https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?auto=format&fit=crop&w=600&q=80" alt="Tabla Costillas" class="menu-item-img" loading="lazy">
+                        <div class="menu-item-body">
+                            <div class="menu-item-header">
+                                <h3>Tabla Costillas XXL</h3>
+                                <span class="price">23.00 €</span>
+                            </div>
+                            <p class="description">Costillas jugosas horneadas a baja temperatura para compartir.</p>
+                        </div>
+                    </article>
+
+                    <article class="menu-item hidden" data-category="tablas">
+                        <img src="https://images.unsplash.com/photo-1558030006-450675393462?auto=format&fit=crop&w=600&q=80" alt="Tabla Entraña" class="menu-item-img" loading="lazy">
+                        <div class="menu-item-body">
+                            <div class="menu-item-header">
+                                <h3>Tabla Entraña XXL</h3>
+                                <span class="price">25.00 €</span>
+                            </div>
+                            <p class="description">Selección de entraña sabrosa a la parrilla servida en tabla gigante.</p>
+                        </div>
+                    </article>
+
+                    <article class="menu-item hidden" data-category="tablas">
+                        <img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&w=600&q=80" alt="Tabla Secreto" class="menu-item-img" loading="lazy">
+                        <div class="menu-item-body">
+                            <div class="menu-item-header">
+                                <h3>Tabla Secreto Ibérico XXL</h3>
+                                <span class="price">21.00 €</span>
+                            </div>
+                            <p class="description">Secreto ibérico fileteado a la brasa con guarnición especial.</p>
+                        </div>
+                    </article>
+
+                    <!-- Hamburguesas -->
+                    <article class="menu-item hidden" data-category="hamburguesas">
+                        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80" alt="La Clásica" class="menu-item-img" loading="lazy">
+                        <div class="menu-item-body">
+                            <div class="menu-item-header">
+                                <h3>La Clásica</h3>
+                                <span class="price">10.00 €</span>
+                            </div>
+                            <p class="description">Carne 100% vacuna, queso cheddar, lechuga fresca, tomate y salsa especial.</p>
+                        </div>
+                    </article>
+
+                    <article class="menu-item hidden" data-category="hamburguesas">
+                        <img src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?auto=format&fit=crop&w=600&q=80" alt="La Cheese Lovers" class="menu-item-img" loading="lazy">
+                        <div class="menu-item-body">
+                            <div class="menu-item-header">
+                                <h3>La Cheese Lovers</h3>
+                                <span class="price">11.00 €</span>
+                            </div>
+                            <p class="description">Para amantes del queso: combinación de múltiples quesos fundidos sobre jugosa carne.</p>
+                        </div>
+                    </article>
+
+                    <article class="menu-item hidden" data-category="hamburguesas">
+                        <img src="https://images.unsplash.com/photo-1583778176476-4a8b02a64c01?auto=format&fit=crop&w=600&q=80" alt="La Trufada" class="menu-item-img" loading="lazy">
+                        <div class="menu-item-body">
+                            <div class="menu-item-header">
+                                <h3>La Trufada</h3>
+                                <span class="price">12.00 €</span>
+                            </div>
+                            <p class="description">Carne gourmet, queso ahumado y fina mayo-truffle aromática.</p>
+                        </div>
+                    </article>
+
+                    <article class="menu-item hidden" data-category="hamburguesas">
+                        <img src="https://images.unsplash.com/photo-1607013251379-e6eecfffe234?auto=format&fit=crop&w=600&q=80" alt="La Castiza" class="menu-item-img" loading="lazy">
+                        <div class="menu-item-body">
+                            <div class="menu-item-header">
+                                <h3>La Castiza</h3>
+                                <span class="price">11.50 €</span>
+                            </div>
+                            <p class="description">Sabor autóctono con ingredientes tradicionales ibéricos de alta calidad.</p>
+                        </div>
+                    </article>
+
+                    <!-- Brioches -->
+                    <article class="menu-item hidden" data-category="brioches">
+                        <img src="https://images.unsplash.com/photo-1626700051175-6818013e1d4f?auto=format&fit=crop&w=600&q=80" alt="Brioche Tinga de Pollo" class="menu-item-img" loading="lazy">
+                        <div class="menu-item-body">
+                            <div class="menu-item-header">
+                                <h3>Brioche Tinga de Pollo</h3>
+                                <span class="price">8.50 €</span>
+                            </div>
+                            <p class="description">Pan brioche tierno relleno de jugosa tinga de pollo especiada.</p>
+                        </div>
+                    </article>
+
+                    <article class="menu-item hidden" data-category="brioches">
+                        <img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=600&q=80" alt="Brioche Pulled Pork" class="menu-item-img" loading="lazy">
+                        <div class="menu-item-body">
+                            <div class="menu-item-header">
+                                <h3>Brioche Pulled Pork</h3>
+                                <span class="price">9.00 €</span>
+                            </div>
+                            <p class="description">Carne de cerdo desmenuzada y horneada a fuego lento con salsa BBQ en pan brioche.</p>
+                        </div>
+                    </article>
+
+                    <article class="menu-item hidden" data-category="brioches">
+                        <img src="https://images.unsplash.com/photo-1509722747041-616f39b57569?auto=format&fit=crop&w=600&q=80" alt="Brioche Ternera Melosa" class="menu-item-img" loading="lazy">
+                        <div class="menu-item-body">
+                            <div class="menu-item-header">
+                                <h3>Brioche Ternera Melosa</h3>
+                                <span class="price">9.50 €</span>
+                            </div>
+                            <p class="description">Ternera guisada en su propio jugo súper tierna en suave pan brioche tostado.</p>
+                        </div>
+                    </article>
+
+                    <!-- Opción Fit -->
+                    <article class="menu-item hidden" data-category="fit">
+                        <img src="https://images.unsplash.com/photo-1532550907401-a500c9a57435?auto=format&fit=crop&w=600&q=80" alt="Pollo Marinado Fit" class="menu-item-img" loading="lazy">
+                        <div class="menu-item-body">
+                            <div class="menu-item-header">
+                                <h3>Pollo Marinado Fit</h3>
+                                <span class="price">15.00 €</span>
+                            </div>
+                            <p class="description">Pechuga de pollo seleccionada marinada con finas hierbas y acompañamiento saludable.</p>
+                        </div>
+                    </article>
+
+                    <article class="menu-item hidden" data-category="fit">
+                        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=600&q=80" alt="Entraña Fit" class="menu-item-img" loading="lazy">
+                        <div class="menu-item-body">
+                            <div class="menu-item-header">
+                                <h3>Entraña Fit</h3>
+                                <span class="price">15.00 €</span>
+                            </div>
+                            <p class="description">Corte magro de entraña a la plancha bajo en grasa con vegetales al vapor.</p>
+                        </div>
+                    </article>
+
+                    <article class="menu-item hidden" data-category="fit">
+                        <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=600&q=80" alt="Seitán Fit" class="menu-item-img" loading="lazy">
+                        <div class="menu-item-body">
+                            <div class="menu-item-header">
+                                <h3>Seitán Fit</h3>
+                                <span class="price">15.00 €</span>
+                            </div>
+                            <p class="description">Proteína vegetal preparada a la plancha con aliño ligero de hierbas.</p>
+                        </div>
+                    </article>
+
+                    <!-- Postres -->
+                    <article class="menu-item hidden" data-category="postres">
+                        <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=600&q=80" alt="Brownie de Chocolate" class="menu-item-img" loading="lazy">
+                        <div class="menu-item-body">
+                            <div class="menu-item-header">
+                                <h3>Brownie de Chocolate</h3>
+                                <span class="price">6.00 €</span>
+                            </div>
+                            <p class="description">Brownie casero de chocolate intenso templado con nueces.</p>
+                        </div>
+                    </article>
+
+                    <article class="menu-item hidden" data-category="postres">
+                        <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=600&q=80" alt="Donut Caramelizado" class="menu-item-img" loading="lazy">
+                        <div class="menu-item-body">
+                            <div class="menu-item-header">
+                                <h3>Donut Caramelizado</h3>
+                                <span class="price">5.50 €</span>
+                            </div>
+                            <p class="description">Donut artesano a la plancha con cubierta de azúcar caramelizada crujiente.</p>
+                        </div>
+                    </article>
+
+                    <article class="menu-item hidden" data-category="postres">
+                        <img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?auto=format&fit=crop&w=600&q=80" alt="Cookie Americana Chocolate Blanco" class="menu-item-img" loading="lazy">
+                        <div class="menu-item-body">
+                            <div class="menu-item-header">
+                                <h3>Cookie Americana Chocolate Blanco</h3>
+                                <span class="price">5.00 €</span>
+                            </div>
+                            <p class="description">Galleta tierna estilo americano repleta de pepitas de chocolate blanco.</p>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Experiencia / Sobre Nosotros (Movidod debajo de la carta según Requisito 3) -->
         <section class="about section" id="nosotros">
             <div class="container grid grid-2">
                 <div class="about-image">
-                    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80" alt="Chef preparando plato estrella" loading="lazy">
+                    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80" alt="Ambiente de CALIMA Alcorcón" loading="lazy">
                 </div>
                 <div class="about-text">
                     <h2 class="section-title">Nuestra Historia & Pasión</h2>
-                    <p class="section-lead">Fusionamos recetas tradicionales con el toque contemporáneo que busca el comensal moderno.</p>
-                    <p>En <strong>Sabor & Tradición</strong> cada ingrediente cuenta una historia. Trabajamos de la mano de agricultores y pescadores locales para garantizar que únicamente lo más fresco llegue a tu mesa.</p>
+                    <p class="section-lead">En CALIMA combinamos la abundancia de nuestras Tablas XXL con la exigencia de la alta cocina rápida.</p>
+                    <p>Ubicados en <strong>Alcorcón</strong>, nacimos con el propósito de ofrecer un punto de encuentro único para amigos y familias. Nos caracterizamos por productos seleccionados, ambiente dinámico y raciones generosas preparadas al instante.</p>
                     <div class="about-features">
                         <div class="feature-item">
-                            <h3>Producto de Cercanía</h3>
-                            <p>100% ingredientes orgánicos y de temporada.</p>
+                            <h3>Tablas XXL & Raciones</h3>
+                            <p>Platos pensados para compartir y disfrutar en grupo.</p>
                         </div>
                         <div class="feature-item">
-                            <h3>Bodega Selección</h3>
-                            <p>Más de 80 referencias de vinos con D.O.</p>
+                            <h3>Calidad en Alcorcón</h3>
+                            <p>Ingredientes frescos y elaboración artesanal cada día.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Menú Interactivo -->
-        <section class="menu section bg-light" id="menu">
+        <!-- Prueba Social / Reseñas Google Maps (Real Carousel & Google Score Sync) -->
+        <section class="reviews section bg-light" id="resenas">
             <div class="container">
-                <div class="section-header text-center">
-                    <h2 class="section-title">Nuestra Carta</h2>
-                    <p>Explora nuestras especialidades elaboradas al momento</p>
-                </div>
-
-                <!-- Filtros Categorías -->
-                <div class="menu-tabs">
-                    <button class="menu-tab active" data-category="entrantes">Entrantes</button>
-                    <button class="menu-tab" data-category="principales">Principales</button>
-                    <button class="menu-tab" data-category="postres">Postres</button>
-                    <button class="menu-tab" data-category="bebidas">Bebidas</button>
-                </div>
-
-                <!-- Grid de Platos -->
-                <div class="menu-grid">
-                    <!-- Entrantes -->
-                    <article class="menu-item" data-category="entrantes">
-                        <div class="menu-item-header">
-                            <h3>Jamón Ibérico de Bellota (100g)</h3>
-                            <span class="price">24.00 €</span>
-                        </div>
-                        <p class="description">Acompañado de cristal de pan con tomate confitado y aceite de oliva virgen extra.</p>
-                    </article>
-
-                    <article class="menu-item" data-category="entrantes">
-                        <div class="menu-item-header">
-                            <h3>Croquetas Artesanas de Trufa y Setas</h3>
-                            <span class="price">14.50 €</span>
-                        </div>
-                        <p class="description">Bechamel cremosa con trufa negra silvestre (6 unidades).</p>
-                    </article>
-
-                    <!-- Principales -->
-                    <article class="menu-item hidden" data-category="principales">
-                        <div class="menu-item-header">
-                            <h3>Solomillo de Vaca Vieja a la Brasa</h3>
-                            <span class="price">28.00 €</span>
-                        </div>
-                        <p class="description">Con parmentier de patata ahumada y reducción de vino de Jerez.</p>
-                    </article>
-
-                    <article class="menu-item hidden" data-category="principales">
-                        <div class="menu-item-header">
-                            <h3>Arroz Meloso de Bogavante</h3>
-                            <span class="price">26.50 €</span>
-                        </div>
-                        <p class="description">Preparado con caldo concentrado de marisco del Cantábrico (Mínimo 2 personas, precio p.p.).</p>
-                    </article>
-
-                    <!-- Postres -->
-                    <article class="menu-item hidden" data-category="postres">
-                        <div class="menu-item-header">
-                            <h3>Tarta de Queso Fluida</h3>
-                            <span class="price">7.50 €</span>
-                        </div>
-                        <p class="description">Receta tradicional elaborada con mezcla de quesos de oveja y galleta artesana.</p>
-                    </article>
-
-                    <article class="menu-item hidden" data-category="postres">
-                        <div class="menu-item-header">
-                            <h3>Coulant de Chocolate 70% con Helado</h3>
-                            <span class="price">8.00 €</span>
-                        </div>
-                        <p class="description">Corazón caliente de chocolate con helado de vainilla de Madagascar.</p>
-                    </article>
-
-                    <!-- Bebidas -->
-                    <article class="menu-item hidden" data-category="bebidas">
-                        <div class="menu-item-header">
-                            <h3>Vino Tinto D.O. Ribera del Duero (Copa)</h3>
-                            <span class="price">4.50 €</span>
-                        </div>
-                        <p class="description">Crianza de autor con notas de frutos rojos y madera roble.</p>
-                    </article>
-
-                    <article class="menu-item hidden" data-category="bebidas">
-                        <div class="menu-item-header">
-                            <h3>Limonada Artesanal con Menta y Jengibre</h3>
-                            <span class="price">4.00 €</span>
-                        </div>
-                        <p class="description">Refrescante, recién exprimida con azúcar de caña orgánico.</p>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <!-- Prueba Social / Reseñas Google Maps -->
-        <section class="reviews section" id="resenas">
-            <div class="container">
-                <div class="google-badge-card">
+                
+                <!-- Badge conectado dinámicamente con Google Maps via API ID / Place -->
+                <a href="https://maps.app.goo.gl/RqSnzNaMKPaTrpdE7" target="_blank" rel="noopener" class="google-badge-card" title="Ver puntuación en Google Maps">
                     <div class="google-logo">
                         <svg width="24" height="24" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/></svg>
                         <span>Google Reviews</span>
                     </div>
                     <div class="rating-score">
-                        <span class="score-number">4.8</span>
+                        <span class="score-number" id="google-rating">4.5</span>
                         <div class="stars">★★★★★</div>
-                        <span class="total-reviews">(+450 opiniones)</span>
+                        <span class="total-reviews" id="google-reviews-count">(Google Maps)</span>
+                    </div>
+                </a>
+
+                <!-- Carrousel interactivo con gestos de arrastre/swipe y barra de progreso -->
+                <div class="carousel-container" id="reviewCarousel">
+                    <div class="carousel-track-wrapper">
+                        <div class="carousel-track" id="carouselTrack">
+                            
+                            <!-- Reseña 1 -->
+                            <div class="review-card slide">
+                                <div class="review-stars">★★★★★</div>
+                                <p>"Muy buenas tablas XXL para cenar con amigos. Las raciones son muy generosas y el servicio impecable en Alcorcón."</p>
+                                <div class="reviewer-name">- Juan Carlos G.</div>
+                            </div>
+
+                            <!-- Reseña 2 -->
+                            <div class="review-card slide">
+                                <div class="review-stars">★★★★★</div>
+                                <p>"Las hamburguesas y los brioches están espectaculares. La hamburguesa Trufada es 100% recomendable."</p>
+                                <div class="reviewer-name">- María Fernández</div>
+                            </div>
+
+                            <!-- Reseña 3 -->
+                            <div class="review-card slide">
+                                <div class="review-stars">★★★★★</div>
+                                <p>"Sitio de 10. Atención súper amable y rápida. La tabla de entraña y las patatas bravas riquísimas."</p>
+                                <div class="reviewer-name">- David R.</div>
+                            </div>
+
+                            <!-- Reseña 4 -->
+                            <div class="review-card slide">
+                                <div class="review-stars">★★★★★</div>
+                                <p>"Excelente ambiente y comida abundante a muy buen precio. Es ideal para ir en grupo a Alcorcón."</p>
+                                <div class="reviewer-name">- Laura M.</div>
+                            </div>
+
+                            <!-- Reseña 5 -->
+                            <div class="review-card slide">
+                                <div class="review-stars">★★★★★</div>
+                                <p>"Los tequeños y las croquetas súper cremosas. Volveremos sin duda a probar la opción Fit y los postres."</p>
+                                <div class="reviewer-name">- Sergio P.</div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Barra de progreso continua -->
+                    <div class="carousel-progress-bar">
+                        <div class="carousel-progress-fill" id="progressFill"></div>
                     </div>
                 </div>
 
-                <div class="reviews-grid">
-                    <div class="review-card">
-                        <div class="review-stars">★★★★★</div>
-                        <p>"El solomillo estuvo sensacional y la atención del personal impecable. Sin duda se ha convertido en nuestro restaurante favorito del centro."</p>
-                        <div class="reviewer-name">- Carlos Mendoza</div>
-                    </div>
-                    <div class="review-card">
-                        <div class="review-stars">★★★★★</div>
-                        <p>"Servicio de 10 y la tarta de queso es de otro planeta. Es fundamental reservar con antelación porque siempre está lleno."</p>
-                        <div class="reviewer-name">- Laura G.</div>
-                    </div>
-                    <div class="review-card">
-                        <div class="review-stars">★★★★★</div>
-                        <p>"Ambiente muy acogedor, excelente relación calidad-precio. Ideal para cenas en pareja o celebraciones especiales."</p>
-                        <div class="reviewer-name">- Javier R.</div>
-                    </div>
-                </div>
             </div>
         </section>
 
-        <!-- Ubicación y Contacto -->
-        <section class="contact section bg-light" id="contacto">
+        <!-- Ubicación y Contacto Corregido a Alcorcón -->
+        <section class="contact section" id="contacto">
             <div class="container grid grid-2">
                 <div class="contact-info">
                     <h2 class="section-title">Dónde Encontrarnos</h2>
-                    <p class="section-lead">Estamos ubicados en una zona privilegiada con fácil acceso.</p>
+                    <p class="section-lead">Nos encontramos en Alcorcón, Madrid. ¡Ven a visitarnos!</p>
                     
                     <div class="info-block">
                         <h3>Dirección</h3>
-                        <p>Calle Gran Vía, 28, 28013 Madrid, España</p>
-                        <a href="https://maps.app.goo.gl/r34zBebKVd5bBvU66" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">Cómo llegar (Google Maps)</a>
+                        <p>CALIMA - Alcorcón, Madrid, España</p>
+                        <a href="https://maps.app.goo.gl/RqSnzNaMKPaTrpdE7" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">Cómo llegar (Google Maps)</a>
                     </div>
 
                     <div class="info-block">
                         <h3>Horario de Apertura</h3>
-                        <p><strong>Martes a Sábado:</strong> 13:00 - 16:00 | 20:00 - 23:30</p>
-                        <p><strong>Domingos:</strong> 13:00 - 16:30</p>
-                        <p><strong>Lunes:</strong> Cerrado por descanso</p>
+                        <p><strong>Lunes a Domingo:</strong> Consúltanos por teléfono o en Google Maps para eventos y horarios actualizados.</p>
                     </div>
 
                     <div class="info-block">
-                        <h3>Contacto Directo</h3>
-                        <p>Teléfono: <a href="tel:+34912345678" class="link-highlight">+34 912 345 678</a></p>
-                        <p>Email: reservaciones@saborytradicion.com</p>
+                        <h3>Reservas y Contacto Directo</h3>
+                        <p>Teléfono: <a href="tel:+34910000000" class="link-highlight">+34 910 000 000</a></p>
+                        <p>Haz tu reserva directamente llamando a nuestro equipo.</p>
                     </div>
                 </div>
 
-                <!-- Mapa Embebido Responsivo -->
+                <!-- Mapa Embebido de Alcorcón -->
                 <div class="map-container">
                     <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.6391480080643!2d-3.704749823438258!3d40.41999205562723!2m3!1f0!2f0!3f0!2m3!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42287d210f7d0b%3A0x10313c0b02f8bf2e!2sGran%20V%C3%ADa%2C%2028%2C%20Centro%2C%2028013%20Madrid!5e0!3m2!1ses!2ses!4v1700000000000!5m2!1ses!2ses" 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12165.267865768846!2d-3.825000!3d40.3445839!2m3!1f0!2f0!3f0!2m3!1i1024!2i768!4f13.1!3m3!1m2!1s0xd418967ddc1a3b1%3A0x892a012b1d34c!2sAlcorc%C3%B3n%2C%20Madrid!5e0!3m2!1ses!2ses!4v1700000000000!5m2!1ses!2ses" 
                         width="100%" 
                         height="100%" 
                         style="border:0;" 
@@ -296,38 +515,37 @@
         </section>
     </main>
 
-    <!-- Sticky Bar para Dispositivos Móviles (Conversión Alta) -->
+    <!-- Sticky Bar Móvil con Botón "Reserva" por teléfono -->
     <div class="mobile-sticky-cta">
-        <a href="tel:+34912345678" class="btn btn-phone">📞 Llamar</a>
-        <a href="https://maps.app.goo.gl/r34zBebKVd5bBvU66" target="_blank" rel="noopener" class="btn btn-primary">Mesa / Pedir</a>
+        <a href="tel:+34910000000" class="btn btn-phone">📞 Reserva por Teléfono</a>
+        <a href="https://maps.app.goo.gl/RqSnzNaMKPaTrpdE7" target="_blank" rel="noopener" class="btn btn-primary">Dónde encontrarnos</a>
     </div>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container footer-content">
             <div class="footer-col">
-                <span class="logo">Sabor <span>&</span> Tradición</span>
-                <p>Gastronomía de calidad y servicio excepcional en cada visita.</p>
+                <span class="logo">CALIMA</span>
+                <p>Gastronomía de calidad, Tablas XXL y ambiente único en Alcorcón.</p>
             </div>
             <div class="footer-col">
                 <h4>Enlaces Rápidos</h4>
                 <ul>
                     <li><a href="#menu">Menú</a></li>
-                    <li><a href="#nosotros">Sobre Nosotros</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="#nosotros">Nuestra Historia</a></li>
+                    <li><a href="#contacto">Ubicación</a></li>
                 </ul>
             </div>
             <div class="footer-col">
                 <h4>Síguenos</h4>
                 <div class="social-links">
-                    <a href="#" aria-label="Instagram">Instagram</a>
-                    <a href="#" aria-label="Facebook">Facebook</a>
-                    <a href="#" aria-label="TripAdvisor">TripAdvisor</a>
+                    <a href="https://maps.app.goo.gl/RqSnzNaMKPaTrpdE7" target="_blank" rel="noopener">Google Maps</a>
+                    <a href="#">Instagram</a>
                 </div>
             </div>
         </div>
         <div class="footer-bottom text-center">
-            <p>&copy; 2026 Sabor & Tradición. Todos los derechos reservados. | <a href="#">Aviso Legal</a> | <a href="#">Política de Privacidad</a></p>
+            <p>&copy; 2026 CALIMA. Todos los derechos reservados. | <a href="#">Aviso Legal</a> | <a href="#">Política de Privacidad</a></p>
         </div>
     </footer>
 

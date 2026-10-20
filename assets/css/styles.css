@@ -34,7 +34,7 @@ body {
     color: var(--dark);
     background-color: var(--white);
     line-height: 1.6;
-    padding-bottom: 60px; /* Espacio para barra móvil fija */
+    padding-bottom: 60px;
 }
 
 @media (min-width: 768px) {
@@ -165,9 +165,8 @@ img {
     font-size: 1.8rem;
     font-weight: 700;
     color: var(--secondary);
+    letter-spacing: 2px;
 }
-
-.logo span { color: var(--primary); }
 
 .nav-menu {
     position: fixed;
@@ -202,7 +201,6 @@ img {
 
 .header-btn { display: none; }
 
-/* Menú Hamburguesa */
 .nav-toggle {
     background: none;
     border: none;
@@ -250,7 +248,7 @@ img {
 .hero {
     position: relative;
     min-height: 90vh;
-    background: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+    background: url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
     display: flex;
     align-items: center;
     color: var(--white);
@@ -305,7 +303,7 @@ img {
 }
 
 /* ==========================================================================
-   MENÚ INTERACTIVO
+   MENÚ INTERACTIVO CON FOTOS POR PLATO
    ========================================================================== */
 .menu-tabs {
     display: flex;
@@ -334,20 +332,43 @@ img {
 
 .menu-grid {
     display: grid;
-    gap: 20px;
-    max-width: 900px;
+    gap: 25px;
+    grid-template-columns: 1fr;
+    max-width: 1100px;
     margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .menu-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 .menu-item {
     background-color: var(--white);
-    padding: 25px;
-    border-radius: 8px;
+    border-radius: 12px;
+    overflow: hidden;
     box-shadow: var(--shadow);
     transition: var(--transition);
+    display: flex;
+    flex-direction: column;
 }
 
 .menu-item.hidden { display: none; }
+
+.menu-item-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.menu-item-body {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
 
 .menu-item-header {
     display: flex;
@@ -359,7 +380,7 @@ img {
 }
 
 .menu-item-header h3 {
-    font-size: 1.3rem;
+    font-size: 1.25rem;
     color: var(--secondary);
 }
 
@@ -367,6 +388,7 @@ img {
     font-weight: 700;
     color: var(--primary);
     font-size: 1.2rem;
+    white-space: nowrap;
 }
 
 .menu-item .description {
@@ -375,16 +397,18 @@ img {
 }
 
 /* ==========================================================================
-   RESEÑAS & PRUEBA SOCIAL
+   CARROUSEL DE RESEÑAS CON BARRA DE PROGRESO Y SWIPE
    ========================================================================== */
 .google-badge-card {
+    display: block;
     background-color: var(--white);
     border-radius: 12px;
     padding: 20px;
     max-width: 320px;
-    margin: 0 auto 50px auto;
+    margin: 0 auto 40px auto;
     text-align: center;
     box-shadow: var(--shadow);
+    color: inherit;
 }
 
 .google-logo {
@@ -412,25 +436,61 @@ img {
 .stars { color: #f4b400; font-size: 1.2rem; }
 .total-reviews { color: var(--gray); font-size: 0.85rem; }
 
-.reviews-grid {
-    display: grid;
-    gap: 25px;
+.carousel-container {
+    max-width: 700px;
+    margin: 0 auto;
+    position: relative;
+    user-select: none;
 }
 
-@media (min-width: 768px) {
-    .reviews-grid { grid-template-columns: repeat(3, 1fr); }
+.carousel-track-wrapper {
+    overflow: hidden;
+    border-radius: 12px;
+    touch-action: pan-y;
 }
 
-.review-card {
-    background-color: var(--light);
-    padding: 30px;
-    border-radius: 8px;
-    border-left: 4px solid var(--primary);
+.carousel-track {
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+    cursor: grab;
 }
 
-.review-stars { color: #f4b400; margin-bottom: 10px; }
-.review-card p { font-style: italic; color: var(--dark); margin-bottom: 15px; }
-.reviewer-name { font-weight: 700; color: var(--secondary); font-size: 0.9rem; }
+.carousel-track:active {
+    cursor: grabbing;
+}
+
+.review-card.slide {
+    min-width: 100%;
+    background-color: var(--white);
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    border-left: 5px solid var(--primary);
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.review-stars { color: #f4b400; margin-bottom: 15px; font-size: 1.3rem; }
+.review-card p { font-style: italic; color: var(--dark); margin-bottom: 20px; font-size: 1.1rem; }
+.reviewer-name { font-weight: 700; color: var(--secondary); font-size: 1rem; }
+
+/* Barra de Progreso */
+.carousel-progress-bar {
+    width: 100%;
+    height: 6px;
+    background-color: var(--gray-light);
+    border-radius: 3px;
+    margin-top: 25px;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-progress-fill {
+    height: 100%;
+    width: 0%;
+    background-color: var(--primary);
+    transition: width 0.1s linear;
+}
 
 /* ==========================================================================
    UBICACIÓN & MAPA
